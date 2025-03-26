@@ -1,7 +1,8 @@
 {
-  "name": "mdbootstrap-5-vite",
+  "name": "pure-natural",
   "version": "1.0.0",
   "type": "module",
+  "preview": true,
   "scripts": {
     "start": "vite",
     "build": "vite build",
