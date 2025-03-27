@@ -26,6 +26,8 @@ body {
 
 // Navbar
 .navbar {
+   position: relative;
+   z-index: 2;
    background-color: $background-primary;
    padding: 0.5rem 0 0;
 
@@ -89,6 +91,49 @@ body {
          margin: 0;
       }
    }
+}
+
+// Intro
+.intro {
+   position: relative;
+   z-index: 1;
+   height: 100vh;
+   background-image: url('../assets/img/background-1.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+   @media (min-width: 992px) {
+      margin-top: -78.4px;
+   }
+
+   .title {
+      @include custom-text($font-title, 700, 5rem, $text-light);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   }
+
+   .sub-title {
+      @include custom-text($font-text, 400, 2.5rem, $text-light);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+   }
+}
+
+// Components
+.btn.btn-light.btn-custom {
+   background-color: $background-main;
+   color: $text-accent;
+
+   &:hover,
+   &:active {
+      background-color: $background-primary;
+      color: $text-accent;
+   }
+}
+
+// Styles
+.mask-strong-dark {
+   @include mask-dark(0.5);
 }
 
 // Small devices
