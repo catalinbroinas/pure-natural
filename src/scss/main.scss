@@ -26,10 +26,11 @@ body {
 
 // Navbar
 .navbar {
-   position: relative;
+   position: fixed;
    z-index: 2;
-   background-color: $background-primary;
+   background-color: transparent;
    padding: 0.5rem 0 0;
+   box-shadow: none;
 
    .navbar-toggler {
       color: $text-accent;
@@ -43,12 +44,13 @@ body {
 
    .navbar-title {
       @include title(1.5rem);
-      color: $text-accent;
+      color: $text-accent-light;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
    }
 
    .navbar-icon {
       font-size: 1.5rem;
-      color: $text-accent;
+      color: $text-accent-light;
    }
 
    .navbar-nav {
@@ -63,6 +65,7 @@ body {
 
    .nav-link {
       @include sub-title(1.25rem);
+      color: $text-light;
       padding: 1rem;
       position: relative;
    }
@@ -70,7 +73,7 @@ body {
    .navbar-brand::after,
    .nav-link::after {
       content: '';
-      @include nav-item-border($text-accent, 0px, 50%);
+      @include nav-item-border($text-accent-light, 0px, 50%);
    }
 
    .navbar-brand:hover::after,
@@ -81,10 +84,32 @@ body {
 
    // Mobile devices
    @include media-breakpoint-down(lg) {
+      background-color: $background-primary;
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 
+         0 2px 4px rgba(0, 0, 0, 0.05);
+
       .navbar-brand {
          display: flex;
          justify-content: center;
          margin: 0;
+      }
+
+      .navbar-title,
+      .navbar-icon {
+         color: $text-accent;
+      }
+
+      .navbar-title {
+         text-shadow: none;
+      }
+
+      .nav-link {
+         color: $text-main;
+      }
+
+      .navbar-brand::after,
+      .nav-link::after {
+         background-color: $text-accent;
       }
 
       .nav-item {
@@ -103,10 +128,6 @@ body {
    background-position: center;
    background-repeat: no-repeat;
    background-attachment: fixed;
-
-   @media (min-width: 992px) {
-      margin-top: -78.4px;
-   }
 
    .title {
       @include custom-text($font-title, 700, 5rem, $text-light);
