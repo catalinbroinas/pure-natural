@@ -91,6 +91,23 @@ body {
    }
 }
 
+.btn.btn-facebook {
+   @include btn-facebook;
+}
+ .btn.btn-instagram {
+   @include btn-instagram;
+}
+ .btn.btn-linkedin {
+   @include btn-linkedin;
+} 
+ .btn.btn-gitHub {
+   @include btn-github;
+}
+
+.contact-icon {
+   color: $text-accent;
+}
+
 // Small devices
 @include media-breakpoint-up(sm) {}
 

@@ -31,6 +31,35 @@
     opacity: 0.8;
 }
 
+@mixin btn-social-media($bg-color) {
+    background-color: $bg-color;
+    color: white;
+
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $bg-color;
+        color: white;
+    }
+}
+
+@mixin btn-facebook {
+    @include btn-social-media(#3b5998);
+}
+
+@mixin btn-instagram {
+    @include btn-social-media(#ac2bac);
+}
+
+@mixin btn-github {
+    @include btn-social-media(#333333);
+}
+
+@mixin btn-linkedin {
+    @include btn-social-media(#0082ca);
+}
+
 // Style
 @mixin mask-dark($opacity: 0.15) {
     background-color: rgba($color: #000000, $alpha: $opacity);
