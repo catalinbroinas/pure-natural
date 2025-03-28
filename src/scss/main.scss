@@ -91,6 +91,28 @@ body {
    }
 }
 
+// Components
+.card-product {
+   .card-title {
+      @include custom-text($font-title, 700, 1.1rem, $text-accent);
+      text-transform: uppercase;
+   }
+
+   .card-sub-title {
+      @include custom-text($font-text, 400, 1rem, $text-main);
+      text-transform: capitalize;
+   }
+
+   .price {
+      @include custom-text($font-title, 600, 1.2rem, $text-main);
+      text-transform: uppercase;
+   }
+}
+
+.mask-special-cold {
+   background-color: rgba(79, 172, 254, 0.2);
+}
+
 // Small devices
 @include media-breakpoint-up(sm) {}
 
