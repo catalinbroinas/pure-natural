@@ -142,13 +142,24 @@ body {
 
 // Components
 .btn.btn-light.btn-custom {
-   background-color: $background-main;
-   color: $text-accent;
+   @include mask-light(0.1);
+   border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
+   color: $text-light;
+   padding: 10px 24px;
+   font-size: 16px;
+   border-radius: 30px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(5px);
+   transition-property: background-color, border, box-shadow, transform;
+   transition-duration: .4s;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
    &:hover,
    &:active {
-      background-color: $background-primary;
-      color: $text-accent;
+      background-color: transparent;
+      border: 1.5px solid rgba($color: #ffffff, $alpha: 0.7);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
    }
 }
 
