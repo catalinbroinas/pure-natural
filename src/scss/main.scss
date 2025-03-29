@@ -100,12 +100,11 @@ body {
 
    .card-sub-title {
       @include custom-text($font-text, 400, 1rem, $text-main);
-      text-transform: capitalize;
    }
 
    .price {
-      @include custom-text($font-title, 600, 1.2rem, $text-main);
-      text-transform: uppercase;
+      @include custom-text($font-title, 500, 1.2rem, $text-main);
+      text-transform: lowercase;
    }
 }
 
