@@ -108,6 +108,18 @@ body {
    }   
 }
 
+.btn.btn-dark.btn-custom {
+   background-color: $button-main;
+   color: $text-light;
+   box-shadow: 0 4px 9px -4px rgba($color: $button-main, $alpha: 0.35);
+
+   &:hover,
+   &:active {
+      box-shadow: 0 8px 9px -4px rgba($color: $button-main, $alpha: 0.15),
+         0 4px 18px 0 rgba($color: $button-main, $alpha: 0.1);
+   }
+}
+
 // Small devices
 @include media-breakpoint-up(sm) {}
 
