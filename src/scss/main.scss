@@ -147,11 +147,35 @@ body {
    .title {
       @include custom-text($font-title, 700, 5rem, $text-light);
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+      @include media-breakpoint-down(xl) {
+         font-size: 4rem;
+      }
+
+      @include media-breakpoint-down(lg) {
+         font-size: 3.5rem;
+      }
+
+      @include media-breakpoint-down(md) {
+         font-size: 2.5rem;
+      }
    }
 
    .sub-title {
       @include custom-text($font-text, 400, 2.5rem, $text-light);
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+
+      @include media-breakpoint-down(xl) {
+         font-size: 2rem;
+      }
+
+      @include media-breakpoint-down(lg) {
+         font-size: 1.75rem;
+      }
+
+      @include media-breakpoint-down(md) {
+         font-size: 1.25rem;
+      }
    }
 }
 
@@ -175,6 +199,21 @@ body {
       border: 1.5px solid rgba($color: #ffffff, $alpha: 0.7);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transform: scale(1.05);
+   }
+
+   @include media-breakpoint-down(xl) {
+      font-size: 15px;
+      padding: 9px 22px;
+   }
+
+   @include media-breakpoint-down(lg) {
+      font-size: 14px;
+      padding: 8px 20px;
+   }
+
+   @include media-breakpoint-down(md) {
+      font-size: 13px;
+      padding: 7px 18px;
    }
 }
 
