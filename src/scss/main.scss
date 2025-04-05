@@ -39,6 +39,7 @@ body {
 
    .navbar-brand {
       padding: 1rem;
+      margin: 0 3rem 0 0;
       position: relative;
    }
 
@@ -55,6 +56,12 @@ body {
 
    .navbar-nav {
       padding: 0;
+   }
+
+   .navbar-nav.navbar-nav-center-page {
+      flex-grow: 1;
+      justify-content: center;
+      padding-right: 200px;
    }
 
    .nav-item {
@@ -91,12 +98,20 @@ body {
       .navbar-brand {
          display: flex;
          justify-content: center;
-         margin: 0;
+      }
+
+      .navbar-brand.navbar-brand-center-page {
+         flex-grow: 1;
+         margin-right: 25px;
       }
 
       .navbar-title,
       .navbar-icon {
          color: $text-accent;
+      }
+
+      .navbar-nav.navbar-nav-center-page {
+         padding: 0;
       }
 
       .navbar-title {
