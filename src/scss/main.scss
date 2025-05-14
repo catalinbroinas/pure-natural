@@ -9,8 +9,11 @@
 // MDBootstrap
 @import 'mdb-ui-kit/src/scss/mdb.free.scss';
 
+// =================================
+//   GLOBAL STYLES
+// =================================
 body {
-    background-color: $background-main;
+   background-color: $background-main;
 }
 
 // Typography
@@ -24,7 +27,9 @@ body {
    @include text;
 }
 
-// Navbar
+// =================================
+//   NAVBAR
+// =================================
 .navbar {
    position: fixed;
    z-index: 2;
@@ -133,6 +138,9 @@ body {
    }
 }
 
+// =================================
+//   SECTIONS
+// =================================
 // Intro
 .intro {
    position: relative;
@@ -179,7 +187,21 @@ body {
    }
 }
 
-// Components
+// About
+.image-about {
+   position: relative;
+   z-index: 1;
+}
+
+// Contact
+.contact-icon {
+   color: $button-main;
+}
+
+// =================================
+//   COMPONENTS
+// =================================
+// Buttons
 .btn.btn-facebook {
    @include btn-facebook;
 }
@@ -245,6 +267,7 @@ body {
    }
 }
 
+// Cards
 .card-product {
    .card-title {
       @include custom-text($font-title, 700, 1.1rem, $text-accent);
@@ -280,16 +303,10 @@ body {
    }   
 }
 
-.image-about {
-   position: relative;
-   z-index: 1;
-}
-
-.contact-icon {
-   color: $button-main;
-}
-
-// Styles
+// =================================
+//   STYLES
+// =================================
+// Masks
 .mask-strong-dark {
    @include mask-dark(0.5);
 }
@@ -305,6 +322,9 @@ body {
    opacity: 1;
 }
 
+// =================================
+//   MEDIA QUERIES
+// =================================
 // Small devices
 @include media-breakpoint-up(sm) {}
 
