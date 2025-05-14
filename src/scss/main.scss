@@ -180,6 +180,22 @@ body {
 }
 
 // Components
+.btn.btn-facebook {
+   @include btn-facebook;
+}
+
+ .btn.btn-instagram {
+   @include btn-instagram;
+}
+
+ .btn.btn-linkedin {
+   @include btn-linkedin;
+} 
+
+ .btn.btn-gitHub {
+   @include btn-github;
+}
+
 .btn.btn-light.btn-custom {
    @include mask-light(0.1);
    border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
@@ -267,6 +283,10 @@ body {
 .image-about {
    position: relative;
    z-index: 1;
+}
+
+.contact-icon {
+   color: $button-main;
 }
 
 // Styles
