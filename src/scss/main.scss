@@ -217,9 +217,29 @@ body {
    }
 }
 
+.card-product {
+   .card-title {
+      @include custom-text($font-title, 700, 1.1rem, $text-accent);
+      text-transform: uppercase;
+   }
+
+   .card-sub-title {
+      @include custom-text($font-text, 400, 1rem, $text-main);
+   }
+
+   .price {
+      @include custom-text($font-title, 500, 1.2rem, $text-main);
+      text-transform: lowercase;
+   }
+}
+
 // Styles
 .mask-strong-dark {
    @include mask-dark(0.5);
+}
+
+.mask-special-cold {
+   background-color: rgba(79, 172, 254, 0.2);
 }
 
 // Small devices
