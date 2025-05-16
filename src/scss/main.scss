@@ -330,7 +330,11 @@ body {
 
    .card-text {
       @include custom-text($font-text, 400, 1rem, $text-main);
-   }   
+   }
+
+   @include media-breakpoint-down(lg) {
+      transform: translate(0, 2rem);
+   }
 }
 
 // =================================
