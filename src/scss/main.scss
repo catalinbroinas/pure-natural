@@ -248,6 +248,10 @@ body {
    @include btn-github;
 }
 
+.btn.btn-youtube {
+   @include btn-youtube;
+}
+
 .btn.btn-light.btn-custom {
    @include mask-light(0.1);
    border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
@@ -335,6 +339,22 @@ body {
    @include media-breakpoint-down(lg) {
       transform: translate(0, 2rem);
    }
+}
+
+// Contact
+.card-contact {
+   position: relative;
+   z-index: 2;
+   @include card-ice(0.2, 15px);
+
+   @include media-breakpoint-up(lg) {
+      transform: translateX(10%)
+   }
+}
+
+.card-map {
+   position: relative;
+   z-index: 1;
 }
 
 // =================================

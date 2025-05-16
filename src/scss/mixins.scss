@@ -70,6 +70,10 @@
     @include btn-social-media(#0082ca);
 }
 
+@mixin btn-youtube {
+    @include btn-social-media(#ed302f);
+}
+
 // Dividers
 @mixin hr-heading($color: black) {
     border: 0.35rem $color solid;
