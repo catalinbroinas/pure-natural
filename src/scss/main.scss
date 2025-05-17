@@ -376,6 +376,15 @@ body {
    opacity: 1;
 }
 
+// Colors
+.text-accent {
+   color: $text-accent;
+}
+
+.bg-accent {
+   background-color: $text-accent;
+}
+
 // =================================
 //   MEDIA QUERIES
 // =================================

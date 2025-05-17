@@ -2,7 +2,7 @@
 import '../scss/main.scss';
 
 // MDBootstrap
-import { Ripple, Dropdown, Collapse, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
+import { Modal, Ripple, Dropdown, Collapse, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
 
 // Modules
 import { UtilityDomManager } from './modules/utility';
@@ -16,7 +16,7 @@ function MainDomManager() {
     };
 
     const initApp = () => {
-        initMDB({ Ripple, Dropdown, Collapse });
+        initMDB({ Modal, Ripple, Dropdown, Collapse });
         addEvents();
     };
 
