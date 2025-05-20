@@ -26,6 +26,9 @@ body {
 .text {
    @include text;
 }
+.footer-text {
+   @include custom-text($font-title, 400, 0.9rem, $text-main);
+}
 
 // =================================
 //   NAVBAR
@@ -383,6 +386,10 @@ body {
 
 .bg-accent {
    background-color: $text-accent;
+}
+
+.bg-footer {
+   background-color: $background-secondary;
 }
 
 // =================================
