@@ -26,8 +26,12 @@ body {
 .text {
    @include text;
 }
+
 .footer-text {
-   @include custom-text($font-title, 400, 0.9rem, $text-main);
+   @include custom-text($font-title, 400, 1rem, $text-main);
+}
+small.footer-text {
+   @include custom-text($font-title, 300, 0.9rem, $text-main);
 }
 
 // =================================
