@@ -313,6 +313,7 @@ small.footer-text {
    .card-title {
       @include custom-text($font-title, 700, 1.1rem, $text-accent);
       text-transform: uppercase;
+      letter-spacing: 0.5px;
    }
 
    .card-sub-title {
