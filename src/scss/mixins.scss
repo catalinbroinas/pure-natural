@@ -93,6 +93,18 @@
     background-color: rgba($color: #ffffff, $alpha: $opacity);
 }
 
+@mixin mask-blue($opacity: 0.15) {
+    background-color: rgba($color: #2962ff, $alpha: $opacity);
+}
+
+@mixin mask-cold($opacity: 0.15) {
+    background-color: rgba($color: #4facfe, $alpha: $opacity);
+}
+
+@mixin mask-teal($opacity: 0.15) {
+    background-color: rgba($color: #1DE9B6, $alpha: $opacity);
+}
+
 // =================================
 //   ANIMATIONS
 // =================================

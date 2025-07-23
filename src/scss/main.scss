@@ -369,11 +369,11 @@ small.footer-text {
 // =================================
 // Masks
 .mask-strong-dark {
-   @include mask-dark(0.5);
+   @include mask-cold;
 }
 
-.mask-special-cold {
-   background-color: rgba(79, 172, 254, 0.2);
+.mask-product {
+   @include mask-teal(0.1);
 }
 
 .mask-effect-1977 {
