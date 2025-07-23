@@ -370,7 +370,7 @@ small.footer-text {
 // =================================
 // Masks
 .mask-strong-dark {
-   @include mask-cold;
+   @include mask-dark(0.5);
 }
 
 .mask-product {
