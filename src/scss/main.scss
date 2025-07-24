@@ -34,6 +34,10 @@ small.footer-text {
    @include custom-text($font-title, 300, 0.9rem, $text-main);
 }
 
+.contact-text {
+   @include custom-text($font-title, 400, 1rem, $text-main);
+}
+
 // =================================
 //   NAVBAR
 // =================================
@@ -233,6 +237,17 @@ small.footer-text {
 // Contact
 .contact-icon {
    color: $button-main;
+   opacity: 0.75;
+}
+
+a.contact-text {
+   text-decoration: none;
+
+   &:hover,
+   &:active {
+      text-decoration: underline;
+      color: $text-accent;
+   }
 }
 
 // =================================
