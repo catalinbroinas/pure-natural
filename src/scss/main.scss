@@ -16,7 +16,13 @@ body {
    background-color: $background-main;
 }
 
+:where(h1) {
+   margin-block: 0.67em;
+   font-size: 2em;
+}
+
 // Typography
+section h1,
 .title {
    @include title;
 }
