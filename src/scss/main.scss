@@ -199,6 +199,10 @@ small.footer-text {
    background-repeat: no-repeat;
    background-attachment: fixed;
 
+   @include media-breakpoint-down(lg) {
+      background-position: 25% 50%;
+   }
+
    .title {
       @include custom-text($font-title, 700, 5rem, $text-light);
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
