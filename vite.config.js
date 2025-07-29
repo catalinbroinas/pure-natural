@@ -2,14 +2,12 @@ import path from 'path';
 import imagemin from 'vite-plugin-imagemin';
 
 export default {
-    base: './',
-    root: path.resolve(__dirname, 'src'),
     server: {
         port: 8080,
         hot: true
     },
     build: {
-        outDir: '../dist',
+        outDir: 'dist',
         emptyOutDir: true,
         rollupOptions: {
             output: {
