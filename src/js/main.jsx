@@ -10,6 +10,9 @@ import { UtilityDomManager } from './modules/utility';
 // React
 import { createRoot } from 'react-dom/client';
 
+// Components
+import ProductList from './components/ProductList';
+
 function MainDomManager() {
     const domUtils = UtilityDomManager();
 
@@ -23,7 +26,7 @@ function MainDomManager() {
         if (!container) return;
 
         const root = createRoot(container);
-        root.render(<h1 style={{color: "darkGreen"}}>React working!</h1>);
+        root.render(<ProductList />);
     };
 
     const initApp = () => {
