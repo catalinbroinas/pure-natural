@@ -1,14 +1,9 @@
 import { useEffect } from "react";
 import { Ripple, initMDB } from "mdb-ui-kit/js/mdb.es.min";
 
-import intenseRomance from "../../assets/img/products/product-1.webp";
+function ProductCard({ product }) {
+    const { image: productImage, name, category, price } = product;
 
-function ProductCard({
-    image = intenseRomance,
-    name = 'Intense Romance',
-    category = 'Parfum',
-    price = 50
-}) {
     useEffect(() => {
         initMDB({ Ripple });
     }, []);
@@ -24,7 +19,7 @@ function ProductCard({
                 data-mdb-ripple-color="light"
                 >
                     <img
-                        src={image}
+                        src={productImage.cardImage}
                         className="object-fit-cover"
                         alt={name}
                         loading="lazy"

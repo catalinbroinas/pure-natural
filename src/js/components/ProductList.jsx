@@ -2,9 +2,15 @@ import ProductCard from "./ProductCard";
 
 function ProductList({ products }) {
     return (
-        <div className="col">
-            <ProductCard />
-        </div>
+        <>
+            {
+                products.map(product => (
+                    <div className="col" key={product.id}>
+                        <ProductCard product={product} />
+                    </div>
+                ))
+            }
+        </>
     );
 }
 

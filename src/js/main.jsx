@@ -13,6 +13,9 @@ import { createRoot } from 'react-dom/client';
 // Components
 import ProductList from './components/ProductList';
 
+// Data
+import products from './data/products';
+
 function MainDomManager() {
     const domUtils = UtilityDomManager();
 
@@ -26,7 +29,7 @@ function MainDomManager() {
         if (!container) return;
 
         const root = createRoot(container);
-        root.render(<ProductList />);
+        root.render(<ProductList products={products} />);
     };
 
     const initApp = () => {
