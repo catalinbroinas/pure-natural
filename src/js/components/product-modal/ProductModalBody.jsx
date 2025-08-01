@@ -64,65 +64,73 @@ function ProductDetails({
 }) {
     return (
         <div className="col-lg-7 mb-4 mb-lg-0">
-            <div className="d-flex align-items-start mb-5">
-                <div className="flex-shrink-0">
-                    <div className="rounded-4 shadow-2-strong bg-accent p-3">
-                        <i className="fa-solid fa-bottle-water fa-lg text-white fa-fw"></i>
+            {amount && (
+                <div className="d-flex align-items-start mb-5">
+                    <div className="flex-shrink-0">
+                        <div className="rounded-4 shadow-2-strong bg-accent p-3">
+                            <i className="fa-solid fa-bottle-water fa-lg text-white fa-fw"></i>
+                        </div>
+                    </div>
+
+                    <div className="flex-grow-1 ms-4">
+                        <h6 className="fw-bold mb-1">Cantitate</h6>
+                        <p className="text-muted mb-0">
+                            Pet din plastic de {amount}ml.
+                        </p>
                     </div>
                 </div>
+            )}
 
-                <div className="flex-grow-1 ms-4">
-                    <h6 className="fw-bold mb-1">Cantitate</h6>
-                    <p className="text-muted mb-0">
-                        Pet din plastic de {amount}ml.
-                    </p>
-                </div>
-            </div>
+            {targetGroup && (
+                <div className="d-flex align-items-start mb-5">
+                    <div className="flex-shrink-0">
+                        <div className="rounded-4 shadow-2-strong bg-accent p-3">
+                            <i className="fa-solid fa-venus fa-lg text-white fa-fw"></i>
+                        </div>
+                    </div>
 
-            <div className="d-flex align-items-start mb-5">
-                <div className="flex-shrink-0">
-                    <div className="rounded-4 shadow-2-strong bg-accent p-3">
-                        <i className="fa-solid fa-venus fa-lg text-white fa-fw"></i>
+                    <div className="flex-grow-1 ms-4">
+                        <h6 className="fw-bold mb-1">Grup țintă</h6>
+                        <p className="text-muted mb-0">
+                            Destinat, in special, {targetGroup}lor.
+                        </p>
                     </div>
                 </div>
+            )}
 
-                <div className="flex-grow-1 ms-4">
-                    <h6 className="fw-bold mb-1">Grup țintă</h6>
-                    <p className="text-muted mb-0">
-                        Destinat, in special, {targetGroup}lor.
-                    </p>
-                </div>
-            </div>
+            {composition && (
+                <div className="d-flex align-items-start mb-5">
+                    <div className="flex-shrink-0">
+                        <div className="rounded-4 shadow-2-strong bg-accent p-3">
+                            <i className="fa-solid fa-leaf fa-lg text-white fa-fw"></i>
+                        </div>
+                    </div>
 
-            <div className="d-flex align-items-start mb-5">
-                <div className="flex-shrink-0">
-                    <div className="rounded-4 shadow-2-strong bg-accent p-3">
-                        <i className="fa-solid fa-leaf fa-lg text-white fa-fw"></i>
+                    <div className="flex-grow-1 ms-4">
+                        <h6 className="fw-bold mb-1">Compoziție</h6>
+                        <p className="text-muted mb-0">
+                            {composition}
+                        </p>
                     </div>
                 </div>
+            )}
 
-                <div className="flex-grow-1 ms-4">
-                    <h6 className="fw-bold mb-1">Compoziție</h6>
-                    <p className="text-muted mb-0">
-                        {composition}
-                    </p>
-                </div>
-            </div>
+            {description && (
+                <div className="d-flex align-items-start mb-5">
+                    <div className="flex-shrink-0">
+                        <div className="rounded-4 shadow-2-strong bg-accent p-3">
+                            <i className="fa-solid fa-bolt fa-lg text-white fa-fw"></i>
+                        </div>
+                    </div>
 
-            <div className="d-flex align-items-start mb-5">
-                <div className="flex-shrink-0">
-                    <div className="rounded-4 shadow-2-strong bg-accent p-3">
-                        <i className="fa-solid fa-bolt fa-lg text-white fa-fw"></i>
+                    <div className="flex-grow-1 ms-4">
+                        <h6 className="fw-bold mb-1">Descriere</h6>
+                        <p className="text-muted mb-0">
+                            {description}
+                        </p>
                     </div>
                 </div>
-
-                <div className="flex-grow-1 ms-4">
-                    <h6 className="fw-bold mb-1">Descriere</h6>
-                    <p className="text-muted mb-0">
-                        {description}
-                    </p>
-                </div>
-            </div>
+            )}
         </div>
     );
 }
