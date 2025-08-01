@@ -1,8 +1,8 @@
 
-function ProductModalHeader({ product: { name } }) {
+function ProductModalHeader({ product: { name, id } }) {
     return (
         <div className="modal-header">
-            <h5 className="modal-title" id="product-modalLabel">
+            <h5 className="modal-title" id={`product-modalLabel-${id}`}>
                 {name} – Detalii produs
             </h5>
 
