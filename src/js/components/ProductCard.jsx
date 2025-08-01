@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Ripple, initMDB } from "mdb-ui-kit/js/mdb.es.min";
+import { Modal, Ripple, initMDB } from "mdb-ui-kit/js/mdb.es.min";
 
 function ProductCard({ product }) {
     const { image: productImage, name, category, price } = product;
@@ -13,7 +13,7 @@ function ProductCard({ product }) {
     const iconProduct = icons[category.trim()] || DEFAULT_ICON;
 
     useEffect(() => {
-        initMDB({ Ripple });
+        initMDB({ Ripple, Modal });
     }, []);
 
     return (
@@ -35,6 +35,8 @@ function ProductCard({ product }) {
                     <a
                         href="#!"
                         role="button"
+                        data-mdb-modal-init
+                        data-mdb-target={`#product-modal-${product.id}`}
                     >
                         <div className="mask mask-product" aria-hidden="true"></div>
                     </a>
