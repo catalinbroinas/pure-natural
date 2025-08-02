@@ -65,12 +65,18 @@ function ProductDetails({
     const icons = {
         amountIcon: 'fa-bottle-water',
         targetGroupIcon: {
-            femei: 'fa-venus',
-            bărbați: 'fa-mars',
-            'toate genurile': 'fa-mars-and-venus'
+            women: 'fa-venus',
+            men: 'fa-mars',
+            all: 'fa-mars-and-venus'
         },
         compositionIcon: 'fa-leaf',
         descriptionIcon: 'fa-bolt'
+    };
+
+    const targetGroupLabel = {
+        women: 'femei',
+        men: 'bărbați',
+        all: 'toate genurile'
     };
 
     const details = [
@@ -82,7 +88,7 @@ function ProductDetails({
         targetGroup && {
             icon: icons.targetGroupIcon[targetGroup],
             title: 'Grup țintă',
-            text: `Potrivit pentru ${targetGroup}.`
+            text: `Potrivit pentru ${targetGroupLabel[targetGroup]}.`
         },
         composition && {
             icon: icons.compositionIcon,

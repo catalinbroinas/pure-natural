@@ -8,7 +8,7 @@ const products = [
         category: 'Parfum',
         price: 50,
         amount: 100,
-        targetGroup: 'femei',
+        targetGroup: 'women',
         composition: 'apă, uleiuri esențiale de trandafir, lavandă și portocale',
         description: 'un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
@@ -19,7 +19,7 @@ const products = [
         category: 'Parfum',
         price: 50,
         amount: 100,
-        targetGroup: 'femei',
+        targetGroup: 'women',
         composition: 'apă, uleiuri esențiale de trandafir, lavandă și portocale',
         description: 'un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
@@ -30,7 +30,7 @@ const products = [
         category: 'Parfum',
         price: 50,
         amount: 100,
-        targetGroup: 'bărbați',
+        targetGroup: 'men',
         composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
         description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
