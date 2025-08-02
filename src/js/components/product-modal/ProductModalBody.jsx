@@ -62,75 +62,67 @@ function ProductDetails({
     composition,
     description
 }) {
+    const icons = {
+        amountIcon: 'fa-bottle-water',
+        targetGroupIcon: {
+            femei: 'fa-venus',
+            bărbați: 'fa-mars',
+            'toate genurile': 'fa-mars-and-venus'
+        },
+        compositionIcon: 'fa-leaf',
+        descriptionIcon: 'fa-bolt'
+    };
+
+    const details = [
+        amount && {
+            icon: icons.amountIcon,
+            title: 'Cantitate',
+            text: `Pet de plastic de ${amount}ml.`
+        },
+        targetGroup && {
+            icon: icons.targetGroupIcon[targetGroup],
+            title: 'Grup țintă',
+            text: `Potrivit pentru ${targetGroup}.`
+        },
+        composition && {
+            icon: icons.compositionIcon,
+            title: 'Compoziție',
+            text: composition
+        },
+        description && {
+            icon: icons.descriptionIcon,
+            title: 'Descriere',
+            text: description
+        }
+    ].filter(Boolean);
+
     return (
         <div className="col-lg-7 mb-4 mb-lg-0">
-            {amount && (
-                <div className="d-flex align-items-start mb-5">
-                    <div className="flex-shrink-0">
-                        <div className="rounded-4 shadow-2-strong bg-accent p-3">
-                            <i className="fa-solid fa-bottle-water fa-lg text-white fa-fw"></i>
-                        </div>
-                    </div>
+           {details.map((item, index) => (
+            <ProductDetailsItem
+                key={index}
+                iconClass={item.icon}
+                title={item.title}
+                text={item.text}
+            />
+           ))}
+        </div>
+    );
+}
 
-                    <div className="flex-grow-1 ms-4">
-                        <h6 className="fw-bold mb-1">Cantitate</h6>
-                        <p className="text-muted mb-0">
-                            Pet din plastic de {amount}ml.
-                        </p>
-                    </div>
+function ProductDetailsItem({ iconClass, title, text }) {
+    return (
+        <div className="d-flex align-items-start mb-5">
+            <div className="flex-shrink-0">
+                <div className="rounded-4 shadow-2-strong bg-accent p-3">
+                    <i className={`fa-solid ${iconClass} fa-lg text-white fa-fw`}></i>
                 </div>
-            )}
+            </div>
 
-            {targetGroup && (
-                <div className="d-flex align-items-start mb-5">
-                    <div className="flex-shrink-0">
-                        <div className="rounded-4 shadow-2-strong bg-accent p-3">
-                            <i className="fa-solid fa-venus fa-lg text-white fa-fw"></i>
-                        </div>
-                    </div>
-
-                    <div className="flex-grow-1 ms-4">
-                        <h6 className="fw-bold mb-1">Grup țintă</h6>
-                        <p className="text-muted mb-0">
-                            Destinat, in special, {targetGroup}lor.
-                        </p>
-                    </div>
-                </div>
-            )}
-
-            {composition && (
-                <div className="d-flex align-items-start mb-5">
-                    <div className="flex-shrink-0">
-                        <div className="rounded-4 shadow-2-strong bg-accent p-3">
-                            <i className="fa-solid fa-leaf fa-lg text-white fa-fw"></i>
-                        </div>
-                    </div>
-
-                    <div className="flex-grow-1 ms-4">
-                        <h6 className="fw-bold mb-1">Compoziție</h6>
-                        <p className="text-muted mb-0">
-                            {composition}
-                        </p>
-                    </div>
-                </div>
-            )}
-
-            {description && (
-                <div className="d-flex align-items-start mb-5">
-                    <div className="flex-shrink-0">
-                        <div className="rounded-4 shadow-2-strong bg-accent p-3">
-                            <i className="fa-solid fa-bolt fa-lg text-white fa-fw"></i>
-                        </div>
-                    </div>
-
-                    <div className="flex-grow-1 ms-4">
-                        <h6 className="fw-bold mb-1">Descriere</h6>
-                        <p className="text-muted mb-0">
-                            {description}
-                        </p>
-                    </div>
-                </div>
-            )}
+            <div className="flex-grow-1 ms-4">
+                <h6 className="fw-bold mb-1">{title}</h6>
+                <p className="text-muted mb-0">{text}</p>
+            </div>
         </div>
     );
 }
