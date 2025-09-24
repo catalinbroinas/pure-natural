@@ -2,18 +2,17 @@
 function ProductModalBody({ 
     product : { 
         name,
+        image: productBackground,
         amount,
         targetGroup,
         composition,
         description
      }
 }) {
-    const imageSrc = 'https://mdbootstrap.com/img/new/textures/full/30.jpg';
-
     return (
         <div className="modal-body">
             <div className="row align-items-center gx-xl-5 g-lg-4 g-md-5 g-4">
-                <ProductName image={imageSrc} name={name} />
+                <ProductName image={productBackground.modalImage} name={name} />
                 <ProductDetails 
                     amount={amount}
                     targetGroup={targetGroup}
