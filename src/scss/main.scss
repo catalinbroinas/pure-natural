@@ -339,6 +339,10 @@ a.contact-text {
    }
 }
 
+.btn.btn-secondary.btn-secondary-custom {
+   @include btn-secondary-custom;
+}
+
 // Cards
 .card-product {
    .card-title {

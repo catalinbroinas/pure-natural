@@ -74,6 +74,21 @@
     @include btn-social-media(#ed302f);
 }
 
+@mixin btn-secondary-custom {
+    background-color: $button-secondary;
+    color: $text-accent;
+
+    &:visited {
+        background-color: $button-secondary;
+        color: $text-accent;
+    }
+
+    &:is(:hover, :focus, :active) {
+        background-color: $button-hover;
+        color: $text-accent;
+    }
+}
+
 // Dividers
 @mixin hr-heading($color: black) {
     border: 0.35rem $color solid;
