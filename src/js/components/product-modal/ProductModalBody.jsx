@@ -38,7 +38,7 @@ function ProductName({ image, name }) {
                     alt=""
                 />
 
-                <div className="mask mask-strong-dark">
+                <div className="mask mask-dark">
                     <div className="d-flex justify-content-center align-items-center h-100">
                         <div className="px-4 py-5 px-md-5 text-white text-center">
                             <h3 className="text-uppercase fw-bold m-0">
