@@ -33,7 +33,7 @@ function ProductCard({ product }) {
                         loading="lazy"
                     />
                     <button
-                        className="mask mask-product shadow-0 border-0"
+                        className="btn-reset mask mask-product"
                         type="button"
                         data-mdb-modal-init
                         data-mdb-target={`#product-modal-${product.id}`}

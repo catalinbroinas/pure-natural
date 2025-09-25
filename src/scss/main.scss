@@ -441,6 +441,11 @@ a.contact-text {
    scroll-margin-top: 100px;
 }
 
+// Utilities
+.btn-reset {
+   @include btn-reset;
+}
+
 // =================================
 //   MEDIA QUERIES
 // =================================
