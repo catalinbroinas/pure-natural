@@ -32,14 +32,13 @@ function ProductCard({ product }) {
                         alt={name}
                         loading="lazy"
                     />
-                    <a
-                        href="#!"
-                        role="button"
+                    <button
+                        className="mask mask-product shadow-0 border-0"
+                        type="button"
                         data-mdb-modal-init
                         data-mdb-target={`#product-modal-${product.id}`}
-                    >
-                        <div className="mask mask-product" aria-hidden="true"></div>
-                    </a>
+                        aria-label={`Detalii despre ${name}`}
+                    ></button>
                 </div>
             </div>
 
