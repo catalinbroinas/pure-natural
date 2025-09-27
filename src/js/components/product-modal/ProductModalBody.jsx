@@ -129,7 +129,7 @@ function ProductDetailsItem({ iconClass, title, text }) {
 
             <div className="flex-grow-1 ms-4">
                 <h6 className="fw-bold mb-1">{title}</h6>
-                <p className="text-muted mb-0">{text}</p>
+                <p className="text-muted-strong mb-0">{text}</p>
             </div>
         </div>
     );

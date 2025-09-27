@@ -33,6 +33,10 @@ section h1,
    @include text;
 }
 
+.text-muted-strong {
+   @include custom-text($font-text, 400, 1rem, $text-dark);
+}
+
 .footer-text {
    @include custom-text($font-title, 400, 1rem, $text-main);
 }
