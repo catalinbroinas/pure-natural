@@ -1,8 +1,14 @@
+// =================================
+//   MIXINS
+// =================================
+
+// Imports
 @use 'variables' as *;
 
 // =================================
 //   TYPOGRAPHY
 // =================================
+
 @mixin title($font-size: 2rem) {
     font-family: $font-title;
     font-weight: 700;
@@ -39,6 +45,7 @@
 // =================================
 //   COMPONENTS
 // =================================
+
 // Cards
 @mixin card-ice($alpha: 0.55, $blur: 30px) {
     background: hsla(0, 0%, 100%, $alpha); 
@@ -101,6 +108,7 @@
 // =================================
 //   STYLES
 // =================================
+
 // Masks
 @mixin mask-dark($opacity: 0.15) {
     background-color: rgba($color: #000000, $alpha: $opacity);
@@ -138,6 +146,7 @@
 // =================================
 //   ANIMATIONS
 // =================================
+
 // Borders
 @mixin nav-item-border($bg-color: $text-accent, $width: 0px, $left: 0%) {
     position: absolute;
