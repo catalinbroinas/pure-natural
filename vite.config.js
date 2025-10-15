@@ -1,11 +1,14 @@
-import path from 'path';
 import imagemin from 'vite-plugin-imagemin';
 import react from '@vitejs/plugin-react';
 
 export default {
     server: {
-        port: 8080,
-        hot: true
+        port: 5173,
+        open: true
+    },
+    preview: {
+        port: 4173,
+        open: true
     },
     build: {
         outDir: 'dist',

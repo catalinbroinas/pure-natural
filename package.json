@@ -4,11 +4,10 @@
   "type": "module",
   "preview": true,
   "scripts": {
-    "start": "vite --open --port 5173",
-    "preview": "vite preview --open --port 4173",
+    "dev": "vite",
+    "preview": "vite preview",
     "build": "vite build",
-    "deploy": "git subtree push --prefix dist origin gh-pages",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
