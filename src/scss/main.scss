@@ -1,13 +1,6 @@
-// Variables and mixins
-@import 'variables';
-@import 'mixins';
-
-// Custom bootstrap and utilities
-@import 'custom-bootstrap';
-@import 'utilities-api.scss';
-
-// MDBootstrap
-@import 'mdb-ui-kit/src/scss/mdb.free.scss';
+// Imports
+@use 'index' as *;
+@use 'mdb-ui-kit/src/scss/mdb.free.scss' as *;
 
 // =================================
 //   GLOBAL STYLES
