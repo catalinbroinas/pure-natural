@@ -392,8 +392,9 @@ a.contact-text {
       @include custom-text($font-title, 700, 1.75rem, $text-accent);
    }
 
-   .card-sub-title {
-      @include custom-text($font-text, 600, 1.25rem, $text-main);
+   .card-subtitle {
+      @include custom-text($font-title, 600, 1rem, $text-dark);
+      letter-spacing: 0.015rem;
    }
 
    .card-text {
