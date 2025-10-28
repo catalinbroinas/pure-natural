@@ -1,0 +1,20 @@
+// =================================
+//   GLOBAL STYLES
+// =================================
+
+// Imports
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+body {
+   background-color: $background-main;
+}
+
+:where(h1) {
+   margin-block: 0.67em;
+   font-size: 2em;
+}
+
+section h1 {
+    @include title();
+}

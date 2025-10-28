@@ -5,25 +5,12 @@
 // Imports
 @use 'base' as *;
 @use 'mdb-overrides' as *;
-
-// =================================
-//   GLOBAL STYLES
-// =================================
-
-body {
-   background-color: $background-main;
-}
-
-:where(h1) {
-   margin-block: 0.67em;
-   font-size: 2em;
-}
+@use 'layout';
 
 // =================================
 //   MAIN STYLE
 // =================================
 
-section h1,
 .title {
    @include title;
 }
