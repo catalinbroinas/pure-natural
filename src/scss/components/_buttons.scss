@@ -5,28 +5,17 @@
 // Imports
 @use '../base' as *;
 
-// Buttons
+// Social media
 .btn.btn-facebook {
    @include btn-facebook;
-}
-
- .btn.btn-instagram {
-   @include btn-instagram;
-}
-
- .btn.btn-linkedin {
-   @include btn-linkedin;
-} 
-
- .btn.btn-gitHub {
-   @include btn-github;
 }
 
 .btn.btn-youtube {
    @include btn-youtube;
 }
 
-.btn.btn-light.btn-custom {
+// Intro button
+.btn.btn-light.btn-intro {
    @include mask-light(0.1);
    border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
    color: $text-light;
@@ -63,7 +52,8 @@
    }
 }
 
-.btn.btn-dark.btn-custom {
+// Primary button
+.btn.btn-dark.btn-primary-custom {
    background-color: $button-main;
    color: $text-light;
    box-shadow: 0 4px 9px -4px rgba($color: $button-main, $alpha: 0.35);
@@ -75,6 +65,7 @@
    }
 }
 
+// Secondary button
 .btn.btn-secondary.btn-secondary-custom {
    @include btn-secondary-custom;
 }
