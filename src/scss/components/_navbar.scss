@@ -1,0 +1,147 @@
+// =================================
+//   NAVBAR
+// =================================
+
+// Imports
+@use '../base' as *;
+
+.navbar {
+   position: fixed;
+   z-index: 3;
+   background-color: transparent;
+   padding: 0.5rem 0 0;
+   box-shadow: none;
+
+   .navbar-toggler {
+      color: $text-accent;
+      padding: 1rem;
+   }
+
+   .navbar-brand {
+      padding: 1rem;
+      margin: 0 3rem 0 0;
+      position: relative;
+   }
+
+   .navbar-icon {
+      width: 32px;
+      height: auto;
+      margin-right: 1rem;
+   }
+
+   .navbar-title {
+      @include title(1.5rem);
+      color: $text-accent-light;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+   }
+
+   .navbar-icon {
+      font-size: 1.5rem;
+      color: $text-accent-light;
+   }
+
+   .navbar-nav {
+      padding: 0;
+   }
+
+   .nav-item {
+      padding: 0;
+      margin: 0 3rem 0 0;
+      text-align: center;
+   }
+
+   .nav-link {
+      @include subtitle(1.25rem);
+      color: $text-light;
+      padding: 1rem;
+      position: relative;
+   }
+
+   .navbar-brand::after,
+   .nav-link::after {
+      content: '';
+      @include nav-item-border($text-accent-light, 0px, 50%);
+   }
+
+   .navbar-brand:hover::after,
+   .nav-link:hover::after {
+      width: 100%;
+      left: 0;
+   }
+
+   // Mobile devices
+   @media (max-width: 991.98px) {
+      background-color: $background-primary;
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 
+         0 2px 4px rgba(0, 0, 0, 0.05);
+
+      .navbar-brand {
+         display: flex;
+         justify-content: center;
+      }
+
+      .navbar-brand.navbar-brand-center {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin-inline: auto;
+         padding: 1rem calc(1rem + 33.5px) 1rem 1rem;
+      }
+
+      .navbar-title,
+      .navbar-icon {
+         color: $text-accent;
+      }
+
+      .navbar-nav.navbar-nav-center-page {
+         padding: 0;
+      }
+
+      .navbar-title {
+         text-shadow: none;
+      }
+
+      .nav-link {
+         color: $text-main;
+      }
+
+      .navbar-brand::after,
+      .nav-link::after {
+         background-color: $text-accent;
+      }
+
+      .nav-item {
+         margin: 0;
+      }
+   }
+
+   transition-property: background-color, color, box-shadow;
+   transition-duration: 0.3s;
+   transition-timing-function: ease-in-out;
+}
+
+// After scroll
+.navbar.scrolled {
+   @media (min-width: 992px) {
+      background-color: $background-primary;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 12px 0px, 
+         rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+
+      .navbar-title {
+         color: $text-accent;
+      }
+
+      .navbar-icon {
+         color: $text-accent;
+      }
+      
+      .nav-link {
+         color: $text-main;
+      }
+
+      .navbar-brand::after,
+      .nav-link::after {
+         background-color: $text-accent;
+      }
+   }
+}
