@@ -24,3 +24,18 @@
 .footer-text {
    @include custom-text($font-title, 400, 1rem, $text-main);
 }
+
+// Contact
+.contact-text {
+   @include custom-text($font-title, 400, 1rem, $text-main);
+}
+
+a.contact-text {
+   text-decoration: none;
+
+   &:hover,
+   &:active {
+      text-decoration: underline;
+      color: $text-accent;
+   }
+}
