@@ -6,35 +6,7 @@
 @use 'base' as *;
 @use 'mdb' as *;
 @use 'global-overrides';
-
-// =================================
-//   MAIN STYLE
-// =================================
-
-.title {
-   @include title;
-}
-.sub-title {
-   @include sub-title;
-}
-.text {
-   @include text;
-}
-
-.text-muted-strong {
-   @include custom-text($font-text, 400, 1rem, $text-dark);
-}
-
-.footer-text {
-   @include custom-text($font-title, 400, 1rem, $text-main);
-}
-small.footer-text {
-   @include custom-text($font-title, 300, 0.9rem, $text-main);
-}
-
-.contact-text {
-   @include custom-text($font-title, 400, 1rem, $text-main);
-}
+@use 'styles';
 
 // =================================
 //   NAVBAR
@@ -242,6 +214,10 @@ small.footer-text {
 }
 
 // Contact
+.contact-text {
+   @include custom-text($font-title, 400, 1rem, $text-main);
+}
+
 .contact-icon {
    color: $button-main;
    opacity: 0.75;
