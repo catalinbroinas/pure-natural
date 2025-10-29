@@ -58,7 +58,7 @@
    }
 
    .nav-link {
-      @include sub-title(1.25rem);
+      @include subtitle(1.25rem);
       color: $text-light;
       padding: 1rem;
       position: relative;
@@ -189,7 +189,7 @@
       }
    }
 
-   .sub-title {
+   .subtitle {
       @include custom-text($font-text, 400, 2.5rem, $text-light);
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 
@@ -332,7 +332,7 @@ a.contact-text {
       letter-spacing: 0.5px;
    }
 
-   .card-sub-title {
+   .card-subtitle {
       @include custom-text($font-text, 400, 1rem, $text-main);
    }
 

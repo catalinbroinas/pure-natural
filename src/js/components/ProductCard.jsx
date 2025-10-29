@@ -44,7 +44,7 @@ function ProductCard({ product }) {
 
             <div className="card-body d-flex flex-column">
                 <h3 className="card-title mb-2">{name}</h3>
-                <h4 className="card-sub-title mb-2 mt-auto">
+                <h4 className="card-subtitle mb-2 mt-auto">
                     <i className={`fa-solid ${iconProduct} text-muted me-2`} aria-hidden="true"></i>
                     {category}
                 </h4>
