@@ -9,28 +9,3 @@
 @use 'styles';
 @use 'components';
 @use 'sections';
-
-// =================================
-//   MEDIA QUERIES
-// =================================
-
-// Small devices
-@include media-breakpoint-up(sm) {}
-
-// Medium devices
-@include media-breakpoint-up(md) {}
-
-// Large devices
-@include media-breakpoint-up(lg) {}
-
-// X-Large devices
-@include media-breakpoint-up(xl) {}
-
-// XX-Large devices
-@include media-breakpoint-up(xxl) {}
-
-// XXX-Large devices (up 1800px)
-@include media-breakpoint-up(xxxl) {}
-
-// Ultra-Large devices (up 2500px)
-@include media-breakpoint-up(ultra) {}
