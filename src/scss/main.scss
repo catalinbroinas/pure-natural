@@ -11,49 +11,6 @@
 @use 'sections';
 
 // =================================
-//   SECTIONS
-// =================================
-
-// About
-.image-about {
-   position: relative;
-   z-index: 1;
-}
-
-// Contact
-.contact-text {
-   @include custom-text($font-title, 400, 1rem, $text-main);
-}
-
-.contact-icon {
-   color: $button-main;
-   opacity: 0.75;
-}
-
-a.contact-text {
-   text-decoration: none;
-
-   &:hover,
-   &:active {
-      text-decoration: underline;
-      color: $text-accent;
-   }
-}
-
-// Brand
-.brand-logo {
-   max-width: 3rem;
-   height: auto;
-   opacity: 0.9;
-   transition: transform 0.3s ease, opacity 0.3s ease;
-
-   &:hover {
-      transform: scale(1.1);
-      opacity: 1.0;
-   }
-}
-
-// =================================
 //   MEDIA QUERIES
 // =================================
 

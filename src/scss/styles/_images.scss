@@ -1,0 +1,31 @@
+// =================================
+//   IMAGES (images, SVGs, logos, icons)
+// =================================
+
+// Imports
+@use '../base' as *;
+
+// About
+.image-about {
+   position: relative;
+   z-index: 1;
+}
+
+// Contact
+.contact-icon {
+   color: $button-main;
+   opacity: 0.75;
+}
+
+// Brand
+.brand-logo {
+   max-width: 3rem;
+   height: auto;
+   opacity: 0.9;
+   transition: transform 0.3s ease, opacity 0.3s ease;
+
+   &:hover {
+      transform: scale(1.1);
+      opacity: 1.0;
+   }
+}
