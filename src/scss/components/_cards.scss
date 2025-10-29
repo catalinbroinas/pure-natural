@@ -1,0 +1,141 @@
+// =================================
+//   BUTTONS
+// =================================
+
+// Imports
+@use '../base' as *;
+
+// Products
+.card-product {
+   .card-title {
+      @include custom-text($font-title, 700, 1.1rem, $text-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+   }
+
+   .card-subtitle {
+      @include custom-text($font-text, 400, 1rem, $text-main);
+   }
+
+   .price {
+      @include custom-text($font-title, 500, 1.2rem, $text-main);
+      text-transform: lowercase;
+   }
+}
+
+// About
+.card-about {
+   position: relative;
+   z-index: 2;
+   @include card-ice;
+   transform: translateX(10%);
+
+   .card-title {
+      @include custom-text($font-title, 700, 1.75rem, $text-accent);
+   }
+
+   .card-subtitle {
+      @include custom-text($font-title, 600, 1rem, $text-dark);
+      letter-spacing: 0.015rem;
+   }
+
+   .card-text {
+      @include custom-text($font-text, 400, 1rem, $text-main);
+   }
+
+   @media (max-width: 991.98px) {
+      transform: translate(0, 2rem);
+   }
+}
+
+// Team
+.card-team {
+   background-color: $background-primary;
+   position: relative;
+   z-index: 1;
+
+   .img-gradient-bg {
+      position: relative;
+      z-index: 2;
+      padding-top: 1rem;
+    
+      &::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(to bottom, $background-accent 50%, $background-primary 50%);
+         z-index: 1;
+      }
+    }  
+    
+   .card-image {
+      position: relative;
+      z-index: 3;
+   }
+
+   .card-header {
+      position: relative;
+      z-index: 1;
+   }
+
+   .card-title {
+      @include custom-text($font-title, 500, 1.35rem, $text-accent);
+      text-align: center;
+   }
+
+   .card-text {
+      @include text;
+   }
+}
+
+// Brand
+.card-brand {
+   text-align: center;
+   transition: transform 0.3s ease;
+
+   .card-icon {
+      font-size: 2rem;
+      color: $text-accent;
+      margin-bottom: 1rem;
+      opacity: 0.7;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+   }
+
+   .card-title {
+      @include custom-text($font-title, 600, 1.25rem, $text-accent);
+      margin-bottom: 0.5rem;
+   }
+
+   .card-text {
+      @include custom-text($font-text, 400, 1rem, $text-dark);
+      margin-bottom: 0;
+   }
+
+   &:hover {
+      transform: translateY(-4px);
+
+      .card-icon {
+         transform: scale(1.1);
+         opacity: 1.0;
+      }
+   }
+}
+
+// Contact
+.card-contact {
+   position: relative;
+   z-index: 2;
+   @include card-ice(0.2, 15px);
+
+   @media (min-width: 992px) {
+      transform: translateX(10%)
+   }
+}
+
+.card-map {
+   position: relative;
+   z-index: 1;
+}
