@@ -6,50 +6,50 @@
 @use '../base' as *;
 
 .intro {
-   position: relative;
-   z-index: 1;
-   height: 100vh;
-   background-image: url('../assets/img/cover.webp');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  background-image: url('../assets/img/cover.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-   @media (max-width: 991.98px) {
-      background-position: 25% 50%;
-   }
+  @media (max-width: 991.98px) {
+    background-position: 25% 50%;
+  }
 
-   .title {
-      @include custom-text($font-title, 700, 5rem, $text-light);
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  .title {
+    @include custom-text($font-title, 700, 5rem, $text-light);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-      @media (max-width: 1199.98px) {
-        font-size: 4rem;
-      }
+    @media (max-width: 1199.98px) {
+      font-size: 4rem;
+    }
 
-      @media (max-width: 991.98px) {
-        font-size: 3.5rem;
-      }
+    @media (max-width: 991.98px) {
+      font-size: 3.5rem;
+    }
 
-      @media (max-width: 767.98px) {
-        font-size: 2.5rem;
-      }
-   }
+    @media (max-width: 767.98px) {
+      font-size: 2.5rem;
+    }
+  }
 
-   .subtitle {
-      @include custom-text($font-text, 400, 2.5rem, $text-light);
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  .subtitle {
+    @include custom-text($font-text, 400, 2.5rem, $text-light);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 
-      @media (max-width: 1199.98px) {
-        font-size: 2rem;
-      }
+    @media (max-width: 1199.98px) {
+      font-size: 2rem;
+    }
 
-      @media (max-width: 991.98px) {
-        font-size: 1.75rem;
-      }
+    @media (max-width: 991.98px) {
+      font-size: 1.75rem;
+    }
 
-      @media (max-width: 767.98px) {
-        font-size: 1.25rem;
-      }
-   }
+    @media (max-width: 767.98px) {
+      font-size: 1.25rem;
+    }
+  }
 }
