@@ -6,10 +6,6 @@
 @use '../base' as *;
 
 // Masks
-.mask-strong-dark {
-   @include mask-dark(0.5);
-}
-
 .mask-dark {
    @include mask-dark(0.25);
 }
