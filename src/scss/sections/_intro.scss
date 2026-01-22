@@ -94,8 +94,12 @@
   }
 
   @media (max-width: 575.98px) {
-    &__content { padding-inline: 1rem; }
+    &__content { padding-inline: 1.5rem; }
     &__title { margin-bottom: 1rem; }
     &__subtitle { margin-bottom: 1rem; }
+  }
+
+  @media (max-width: 399.98px) {
+    &__content { padding-inline: 1.25rem; }
   }
 }
