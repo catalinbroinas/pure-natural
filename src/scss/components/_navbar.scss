@@ -115,6 +115,13 @@
       }
    }
 
+   // Extra small devices
+   @media (max-width: 359.98px) {
+      .navbar-brand.navbar-brand-center {
+         padding: 1rem;
+      }
+   }
+
    transition-property: background-color, color, box-shadow;
    transition-duration: 0.3s;
    transition-timing-function: ease-in-out;
