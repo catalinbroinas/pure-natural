@@ -25,32 +25,28 @@ function UtilityDomManager() {
         const collapseInstance = new Collapse(navbarCollapse, { toggle: false });
 
         const isMobile = () => window.innerWidth < MOBILE_BREAKPOINT;
+        const isOpen = () => navbarCollapse.classList.contains('show');
 
         // Tap on link
         navbarLinks.forEach((link) => {
             link.addEventListener('click', () => {
-                if (!isMobile()) return;
+                if (!isMobile() || !isOpen()) return;
                 setTimeout(() => collapseInstance.hide(), HIDE_DELAY);
             });
         });
 
         // Scroll
-        let lastScroll = 0;
         window.addEventListener('scroll', () => {
-            if (!isMobile()) return;
-            const scrollY = window.scrollY;
-            if (
-                scrollY - lastScroll > 19 &&
-                navbarCollapse.classList.contains('show')
-            ) {
+            if (!isMobile() || !isOpen()) return;
+
+            if (window.scrollY > 20) {
                 setTimeout(() => collapseInstance.hide(), HIDE_DELAY);
             }
         });
 
         // Tap outside
         document.addEventListener('click', (e) => {
-            if (!isMobile()) return;
-            if (!navbarCollapse.classList.contains('show')) return;
+            if (!isMobile() || !isOpen()) return;
 
             const clickedInsideMenu = navbarCollapse.contains(e.target);
             const clickedToggle = toggleButton.contains(e.target);
