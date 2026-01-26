@@ -14,27 +14,49 @@ function UtilityDomManager() {
     const collapseNavbar = (navbar) => {
         if (!navbar) return;
 
-        const MOBILE_BREAKPOINT = 992;
         const navbarCollapse = navbar.querySelector('#navbarSupportedContent');
         if (!navbarCollapse) return;
 
+        const MOBILE_BREAKPOINT = 992;
+        const HIDE_DELAY = 300;
+
         const navbarLinks = navbarCollapse.querySelectorAll('.nav-link');
+        const toggleButton = navbar.querySelector('.navbar-toggler');
         const collapseInstance = new Collapse(navbarCollapse, { toggle: false });
 
+        const isMobile = () => window.innerWidth < MOBILE_BREAKPOINT;
+
+        // Tap on link
         navbarLinks.forEach((link) => {
             link.addEventListener('click', () => {
-                if (window.innerWidth < MOBILE_BREAKPOINT) {
-                    collapseInstance.hide();
-                }
+                if (!isMobile()) return;
+                setTimeout(() => collapseInstance.hide(), HIDE_DELAY);
             });
         });
 
+        // Scroll
+        let lastScroll = 0;
         window.addEventListener('scroll', () => {
+            if (!isMobile()) return;
+            const scrollY = window.scrollY;
             if (
-                window.innerWidth < MOBILE_BREAKPOINT &&
+                scrollY - lastScroll > 19 &&
                 navbarCollapse.classList.contains('show')
             ) {
-                collapseInstance.hide();
+                setTimeout(() => collapseInstance.hide(), HIDE_DELAY);
+            }
+        });
+
+        // Tap outside
+        document.addEventListener('click', (e) => {
+            if (!isMobile()) return;
+            if (!navbarCollapse.classList.contains('show')) return;
+
+            const clickedInsideMenu = navbarCollapse.contains(e.target);
+            const clickedToggle = toggleButton.contains(e.target);
+
+            if (!clickedInsideMenu && !clickedToggle) {
+                setTimeout(() => collapseInstance.hide(), HIDE_DELAY);
             }
         });
     };
