@@ -22,6 +22,7 @@ function MainDomManager() {
     const addEvents = () => {
         const navbar = document.querySelector('#navbar');
         domUtils.scrollNavbar(navbar);
+        domUtils.collapseNavbar(navbar);
     };
 
     const renderProducts = () => {
