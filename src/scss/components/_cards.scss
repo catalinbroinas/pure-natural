@@ -21,6 +21,20 @@
       @include custom-text($font-title, 500, 1.2rem, $text-main);
       text-transform: lowercase;
    }
+
+   // Touch devices
+   @media (hover: none) {
+      .bg-image.no-hover-mobile {
+         & img {
+            transform: none;
+            transition: none;
+         }
+      }
+
+      .no-hover-mobile .mask-product {
+         opacity: 0;
+      }
+   }
 }
 
 // About

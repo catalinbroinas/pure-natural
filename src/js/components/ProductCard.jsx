@@ -22,7 +22,7 @@ function ProductCard({ product }) {
                 className="overflow-hidden shadow-4-strong rounded-6 mx-3 mt-n3"
             >
                 <div
-                className="bg-image hover-overlay hover-zoom ratio ratio-4x3"
+                className="bg-image hover-overlay hover-zoom no-hover-mobile ratio ratio-4x3"
                 data-mdb-ripple-init=""
                 data-mdb-ripple-color="light"
                 >
