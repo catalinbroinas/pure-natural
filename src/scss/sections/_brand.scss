@@ -1,0 +1,30 @@
+// =================================
+//   BRAND
+// =================================
+
+// Imports
+@use '../base' as *;
+
+.brand-cta {
+  background: linear-gradient(
+    135deg,
+    rgba($background-accent, 0.5) 0%,
+    $background-primary 100%,
+  );
+  padding: 5rem 0;
+  border-radius: 0.75rem;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.075);
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__text {
+    @include custom-text($font-text, 600, 1.25rem, $text-accent);
+    text-align: center;
+  }
+}
