@@ -18,6 +18,12 @@
 }
 
 // Brand
+.brand-icon {
+   font-size: 1.5rem;
+   @media (max-width: 991.98px) { font-size: 1.25rem; }
+   @media (max-width: 575.98px) { font-size: 1.1rem; }
+}
+
 .brand-logo {
    max-width: 3rem;
    height: auto;
