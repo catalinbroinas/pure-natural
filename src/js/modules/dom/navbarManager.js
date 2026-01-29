@@ -1,6 +1,6 @@
 import { Collapse } from "mdb-ui-kit/js/mdb.es.min";
 
-function UtilityDomManager() {
+function NavbarManager() {
     const scrollNavbar = (navbar) => {
         if (!navbar) return;
 
@@ -60,4 +60,4 @@ function UtilityDomManager() {
     return { scrollNavbar, collapseNavbar };
 }
 
-export { UtilityDomManager };
+export { NavbarManager };

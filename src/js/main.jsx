@@ -5,7 +5,7 @@ import '../scss/main.scss';
 import { Modal, Ripple, Dropdown, Collapse, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
 
 // Modules
-import { UtilityDomManager } from './modules/utility';
+import { NavbarManager } from './modules/dom/navbarManager';
 
 // React
 import { createRoot } from 'react-dom/client';
@@ -17,12 +17,12 @@ import ProductList from './components/ProductList';
 import products from './data/products';
 
 function MainDomManager() {
-    const domUtils = UtilityDomManager();
+    const navbarManager = NavbarManager();
 
     const addEvents = () => {
         const navbar = document.querySelector('#navbar');
-        domUtils.scrollNavbar(navbar);
-        domUtils.collapseNavbar(navbar);
+        navbarManager.scrollNavbar(navbar);
+        navbarManager.collapseNavbar(navbar);
     };
 
     const renderProducts = () => {
