@@ -40,12 +40,16 @@ function NavbarManager(navbar) {
         });
 
         // Scroll
+        let scrollHandled = false;
         window.addEventListener('scroll', () => {
-            if (!isMobile() || !isOpen()) return;
+            if (!isMobile() || !isOpen() || scrollHandled) return;
 
-            if (window.scrollY > 20) {
-                setTimeout(() => collapseInstance.hide(), HIDE_DELAY);
-            }
+            scrollHandled = true;
+            setTimeout(() => collapseInstance.hide(), HIDE_DELAY);
+        });
+
+        window.addEventListener('hide.mdb.collapse', () => {
+            scrollHandled = false;
         });
 
         // Tap outside
