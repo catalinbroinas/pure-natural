@@ -17,12 +17,12 @@ import ProductList from './components/ProductList';
 import products from './data/products';
 
 function MainDomManager() {
-    const navbarManager = NavbarManager();
-
     const addEvents = () => {
         const navbar = document.querySelector('#navbar');
-        navbarManager.scrollNavbar(navbar);
-        navbarManager.collapseNavbar(navbar);
+        const navbarManager = NavbarManager(navbar);
+
+        navbarManager.scrollNavbar();
+        navbarManager.collapseNavbar();
     };
 
     const renderProducts = () => {

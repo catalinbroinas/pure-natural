@@ -1,9 +1,15 @@
 import { Collapse } from "mdb-ui-kit/js/mdb.es.min";
 
-function NavbarManager() {
-    const scrollNavbar = (navbar) => {
-        if (!navbar) return;
+function NavbarManager(navbar) {
+    if (!navbar) {
+        console.error('Navbar not found!');
+        return {
+            scrollNavbar: () => { },
+            collapseNavbar: () => { },
+        };
+    }
 
+    const scrollNavbar = () => {
         window.addEventListener('scroll', () => {
             (window.pageYOffset > 100)
                 ? navbar.classList.add('scrolled')
@@ -11,9 +17,7 @@ function NavbarManager() {
         });
     };
 
-    const collapseNavbar = (navbar) => {
-        if (!navbar) return;
-
+    const collapseNavbar = () => {
         const navbarCollapse = navbar.querySelector('#navbarSupportedContent');
         if (!navbarCollapse) return;
 
