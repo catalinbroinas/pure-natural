@@ -7,27 +7,27 @@
 
 // Social media
 .btn.btn-facebook {
-   @include btn-facebook;
+  @include btn-facebook;
 }
 
 .btn.btn-youtube {
-   @include btn-youtube;
+  @include btn-youtube;
 }
 
 // Primary button
 .btn.btn-dark.btn-primary-custom {
-   background-color: $button-main;
-   color: $text-light;
-   box-shadow: 0 4px 9px -4px rgba($color: $button-main, $alpha: 0.35);
+  background-color: $button-main;
+  color: $text-light;
+  box-shadow: 0 4px 9px -4px rgba($color: $button-main, $alpha: 0.35);
 
-   &:hover,
-   &:active {
-      box-shadow: 0 8px 9px -4px rgba($color: $button-main, $alpha: 0.15),
-         0 4px 18px 0 rgba($color: $button-main, $alpha: 0.1);
-   }
+  &:hover,
+  &:active {
+    box-shadow: 0 8px 9px -4px rgba($color: $button-main, $alpha: 0.15),
+    0 4px 18px 0 rgba($color: $button-main, $alpha: 0.1);
+  }
 }
 
 // Secondary button
 .btn.btn-secondary.btn-secondary-custom {
-   @include btn-secondary-custom;
+  @include btn-secondary-custom;
 }
