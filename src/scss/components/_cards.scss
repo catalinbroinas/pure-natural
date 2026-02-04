@@ -139,21 +139,6 @@
 }
 
 // Contact
-.card-contact {
-   position: relative;
-   z-index: 2;
-   @include card-ice(0.2, 15px);
-
-   @media (min-width: 992px) {
-      transform: translateX(10%)
-   }
-}
-
-.card-map {
-   position: relative;
-   z-index: 1;
-}
-
 .contact-maps {
    --mdb-aspect-ratio: 100%; // 1x1
    @media (min-width: 576px) {
