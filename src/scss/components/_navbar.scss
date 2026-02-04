@@ -35,11 +35,6 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   }
 
-  .navbar-icon {
-    font-size: 1.5rem;
-    color: $text-accent-light;
-  }
-
   .navbar-nav {
     padding: 0;
   }
@@ -67,8 +62,8 @@
   @media (hover: hover) {
     .navbar-brand:hover::after,
     .nav-link:hover::after {
-        width: 100%;
-        left: 0;
+      width: 100%;
+      left: 0;
     }
   }
 
@@ -76,8 +71,8 @@
   @media (hover: none) {
     .navbar-brand:active::after,
     .nav-link:active::after {
-        width: 100%;
-        left: 0;
+      width: 100%;
+      left: 0;
     }
   }
 
@@ -85,52 +80,44 @@
   @media (max-width: 991.98px) {
     background-color: $background-primary;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 
-        0 2px 4px rgba(0, 0, 0, 0.05);
+    0 2px 4px rgba(0, 0, 0, 0.05);
 
     .navbar-brand {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
 
     .navbar-brand.navbar-brand-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-inline: auto;
-        padding: 1rem calc(1rem + 33.5px) 1rem 1rem;
-    }
-
-    .navbar-title,
-    .navbar-icon {
-        color: $text-accent;
-    }
-
-    .navbar-nav.navbar-nav-center-page {
-        padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-inline: auto;
+      padding: 1rem calc(1rem + 33.5px) 1rem 1rem;
     }
 
     .navbar-title {
-        text-shadow: none;
+      color: $text-accent;
+      text-shadow: none;
     }
 
     .nav-link {
-        color: $text-main;
+      color: $text-main;
     }
 
     .navbar-brand::after,
     .nav-link::after {
-        background-color: $text-accent;
+      background-color: $text-accent;
     }
 
     .nav-item {
-        margin: 0;
+      margin: 0;
     }
   }
 
   // Extra small devices
   @media (max-width: 359.98px) {
     .navbar-brand.navbar-brand-center {
-        padding: 1rem;
+      padding: 1rem;
     }
   }
 
@@ -144,23 +131,19 @@
   @media (min-width: 992px) {
     background-color: $background-primary;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 12px 0px, 
-        rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+    rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
 
     .navbar-title {
-        color: $text-accent;
-    }
-
-    .navbar-icon {
-        color: $text-accent;
+      color: $text-accent;
     }
     
     .nav-link {
-        color: $text-main;
+      color: $text-main;
     }
 
     .navbar-brand::after,
     .nav-link::after {
-        background-color: $text-accent;
+      background-color: $text-accent;
     }
   }
 }
