@@ -4,7 +4,6 @@
 
 // Imports
 @use '../base' as *;
-@use '../mdb/mdb-overrides' as mdb;
 
 // Products
 .card-product {
@@ -157,7 +156,7 @@
 
 .contact-maps {
    --mdb-aspect-ratio: 100%; // 1x1
-   @include mdb.media-breakpoint-up(sm) {
+   @media (min-width: 576px) {
       --mdb-aspect-ratio: calc(9 / 16 * 100%); // 16x9
    }
 }
