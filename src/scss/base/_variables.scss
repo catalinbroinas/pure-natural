@@ -6,21 +6,25 @@
 //   COLORS
 // =================================
 
+// Brand color
+$brand: #2C5F2D;
+
 // Background Colors
 $background-main: #fbfbfb;
 $background-primary: #ffffff;
 $background-secondary: #f2f2f2;
 $background-accent: #DCEDC8;
+$background-brand: $brand;
 
 // Text Colors
 $text-main: #332D2D;
 $text-dark: #666666;
-$text-accent: #2C5F2D;
+$text-accent: $brand;
 $text-accent-light: #E8F5E9;
 $text-light: #ffffff;
 
 // Button & Hover Colors
-$button-main: #2C5F2D;
+$button-main: $brand;
 $button-hover: #C8E6C9;
 $button-secondary: #E8F5E9;
 
