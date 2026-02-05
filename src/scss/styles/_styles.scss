@@ -7,39 +7,39 @@
 
 // Masks
 .mask-dark {
-   @include mask-dark(0.25);
+  @include mask-dark(0.25);
 }
 
 .mask-product {
-   @include mask-teal(0.1);
+  @include mask-teal(0.1);
 }
 
 .mask-effect-1977 {
-   backdrop-filter: contrast(110%) brightness(110%) saturate(130%) sepia(0%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
-   mix-blend-mode: screen;
-   background: rgba(243, 106, 188, 0.3);
-   opacity: 1;
+  backdrop-filter: contrast(110%) brightness(110%) saturate(130%) sepia(0%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
+  mix-blend-mode: screen;
+  background: rgba(243, 106, 188, 0.3);
+  opacity: 1;
 }
 
 // Colors
 .text-accent {
-   color: $text-accent;
+  color: $text-accent;
 }
 
 .bg-accent {
-   background-color: $text-accent;
+  background-color: $text-accent;
 }
 
 .bg-footer {
-   background-color: $background-secondary;
+  background-color: $background-secondary;
 }
 
 // Spacing
 .scroll-margin {
-   scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 // Utilities
 .btn-reset {
-   @include btn-reset;
+  @include btn-reset;
 }
