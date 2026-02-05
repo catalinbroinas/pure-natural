@@ -23,15 +23,3 @@
   @media (max-width: 991.98px) { font-size: 1.25rem; }
   @media (max-width: 575.98px) { font-size: 1.1rem; }
 }
-
-.brand-logo {
-  max-width: 3rem;
-  height: auto;
-  opacity: 0.9;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-    opacity: 1.0;
-  }
-}
