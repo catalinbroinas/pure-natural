@@ -6,36 +6,36 @@
 @use '../base' as *;
 
 .title {
-   @include title;
+  @include title;
 }
 
 .subtitle {
-   @include subtitle;
+  @include subtitle;
 }
 
 .text {
-   @include text;
+  @include text;
 }
 
 .text-muted-strong {
-   @include custom-text($font-text, 400, 1rem, $text-dark);
+  @include custom-text($font-text, 400, 1rem, $text-dark);
 }
 
 .footer-text {
-   @include custom-text($font-title, 400, 1rem, $text-main);
+  @include custom-text($font-title, 400, 1rem, $text-main);
 }
 
 // Contact
 .contact-text {
-   @include custom-text($font-title, 400, 1rem, $text-main);
+  @include custom-text($font-title, 400, 1rem, $text-main);
 }
 
 a.contact-text {
-   text-decoration: none;
+  text-decoration: none;
 
-   &:hover,
-   &:active {
-      text-decoration: underline;
-      color: $text-accent;
-   }
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    color: $text-accent;
+  }
 }
