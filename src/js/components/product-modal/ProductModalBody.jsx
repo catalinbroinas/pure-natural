@@ -122,7 +122,7 @@ function ProductDetailsItem({ iconClass, title, text }) {
     return (
         <div className="d-flex align-items-start">
             <div className="flex-shrink-0">
-                <div className="rounded-4 shadow-2-strong bg-accent p-3">
+                <div className="rounded-4 shadow-2-strong bg-brand p-3">
                     <i className={`fa-solid ${iconClass} text-white fa-lg fa-fw`}></i>
                 </div>
             </div>
