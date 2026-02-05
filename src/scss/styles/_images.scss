@@ -7,31 +7,31 @@
 
 // About
 .image-about {
-   position: relative;
-   z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 // Contact
 .contact-icon {
-   color: $button-main;
-   opacity: 0.75;
+  color: $button-main;
+  opacity: 0.75;
 }
 
 // Brand
 .brand-icon {
-   font-size: 1.5rem;
-   @media (max-width: 991.98px) { font-size: 1.25rem; }
-   @media (max-width: 575.98px) { font-size: 1.1rem; }
+  font-size: 1.5rem;
+  @media (max-width: 991.98px) { font-size: 1.25rem; }
+  @media (max-width: 575.98px) { font-size: 1.1rem; }
 }
 
 .brand-logo {
-   max-width: 3rem;
-   height: auto;
-   opacity: 0.9;
-   transition: transform 0.3s ease, opacity 0.3s ease;
+  max-width: 3rem;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 
-   &:hover {
-      transform: scale(1.1);
-      opacity: 1.0;
-   }
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1.0;
+  }
 }
