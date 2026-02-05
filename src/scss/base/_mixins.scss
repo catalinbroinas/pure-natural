@@ -10,36 +10,36 @@
 // =================================
 
 @mixin title($font-size: 2rem) {
-    font-family: $font-title;
-    font-weight: 700;
-    color: $text-main;
-    font-size: $font-size;
+  font-family: $font-title;
+  font-weight: 700;
+  color: $text-main;
+  font-size: $font-size;
 }
 
 @mixin subtitle($font-size: 1.5rem) {
-    font-family: $font-text;
-    font-weight: 600;
-    color: $text-main;
-    font-size: $font-size;
+  font-family: $font-text;
+  font-weight: 600;
+  color: $text-main;
+  font-size: $font-size;
 }
 
 @mixin text($font-size: 1rem) {
-    font-family: $font-text;
-    font-weight: 400;
-    color: $text-main;
-    font-size: $font-size;
+  font-family: $font-text;
+  font-weight: 400;
+  color: $text-main;
+  font-size: $font-size;
 }
 
 @mixin custom-text(
-    $font-family: $font-text, 
-    $font-weight: 400, 
-    $font-size: 1rem, 
-    $color: $text-main
+  $font-family: $font-text, 
+  $font-weight: 400, 
+  $font-size: 1rem, 
+  $color: $text-main
 ) {
-    font-family: $font-family;
-    font-weight: $font-weight;
-    font-size: $font-size;
-    color: $color;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
 }
 
 // =================================
@@ -48,61 +48,61 @@
 
 // Cards
 @mixin card-ice($alpha: 0.55, $blur: 30px) {
-    background: hsla(0, 0%, 100%, $alpha); 
-    backdrop-filter: blur($blur);
+  background: hsla(0, 0%, 100%, $alpha); 
+  backdrop-filter: blur($blur);
 }
 
 // Buttons
 @mixin btn-social-media($bg-color) {
+  background-color: $bg-color;
+  color: white;
+
+  &:is(:visited, :hover, :focus, :active) {
     background-color: $bg-color;
     color: white;
-
-    &:is(:visited, :hover, :focus, :active) {
-        background-color: $bg-color;
-        color: white;
-    }
+  }
 }
 
 @mixin btn-facebook {
-    @include btn-social-media(#3b5998);
+  @include btn-social-media(#3b5998);
 }
 
 @mixin btn-instagram {
-    @include btn-social-media(#ac2bac);
+  @include btn-social-media(#ac2bac);
 }
 
 @mixin btn-github {
-    @include btn-social-media(#333333);
+  @include btn-social-media(#333333);
 }
 
 @mixin btn-linkedin {
-    @include btn-social-media(#0082ca);
+  @include btn-social-media(#0082ca);
 }
 
 @mixin btn-youtube {
-    @include btn-social-media(#ed302f);
+  @include btn-social-media(#ed302f);
 }
 
 @mixin btn-secondary-custom {
+  background-color: $button-secondary;
+  color: $text-accent;
+
+  &:visited {
     background-color: $button-secondary;
     color: $text-accent;
+  }
 
-    &:visited {
-        background-color: $button-secondary;
-        color: $text-accent;
-    }
-
-    &:is(:hover, :focus, :active) {
-        background-color: $button-hover;
-        color: $text-accent;
-    }
+  &:is(:hover, :focus, :active) {
+    background-color: $button-hover;
+    color: $text-accent;
+  }
 }
 
 // Dividers
 @mixin hr-heading($color: black) {
-    border: 0.35rem $color solid;
-    width: 8vw;
-    opacity: 0.8;
+  border: 0.35rem $color solid;
+  width: 8vw;
+  opacity: 0.8;
 }
 
 // =================================
@@ -111,36 +111,36 @@
 
 // Masks
 @mixin mask-dark($opacity: 0.15) {
-    background-color: rgba($color: #000000, $alpha: $opacity);
+  background-color: rgba($color: #000000, $alpha: $opacity);
 }
 
 @mixin mask-light($opacity: 0.15) {
-    background-color: rgba($color: #ffffff, $alpha: $opacity);
+  background-color: rgba($color: #ffffff, $alpha: $opacity);
 }
 
 @mixin mask-blue($opacity: 0.15) {
-    background-color: rgba($color: #2962ff, $alpha: $opacity);
+  background-color: rgba($color: #2962ff, $alpha: $opacity);
 }
 
 @mixin mask-cold($opacity: 0.15) {
-    background-color: rgba($color: #4facfe, $alpha: $opacity);
+  background-color: rgba($color: #4facfe, $alpha: $opacity);
 }
 
 @mixin mask-teal($opacity: 0.15) {
-    background-color: rgba($color: #1DE9B6, $alpha: $opacity);
+  background-color: rgba($color: #1DE9B6, $alpha: $opacity);
 }
 
 // Utilities
 @mixin btn-reset {
-    border: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
-    outline: none;
-    color: inherit;
-    font: inherit;
-    text-align: inherit;
-    cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
 }
 
 // =================================
@@ -149,13 +149,13 @@
 
 // Borders
 @mixin nav-item-border($bg-color: $text-accent, $width: 0px, $left: 0%) {
-    position: absolute;
-    width: $width;
-    height: 6px;
-    left: $left;
-    bottom: 0;
-    background-color: $bg-color;
-    transition-property: width, left;
-    transition-timing-function: ease-in-out;
-    transition-duration: .2s;
+  position: absolute;
+  width: $width;
+  height: 6px;
+  left: $left;
+  bottom: 0;
+  background-color: $bg-color;
+  transition-property: width, left;
+  transition-timing-function: ease-in-out;
+  transition-duration: .2s;
 }
