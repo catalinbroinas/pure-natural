@@ -4,7 +4,8 @@ import flowerPower from "../../assets/img/products/product-2.webp";
 import citricJoy from "../../assets/img/products/product-3.webp";
 import noMosquitos from "../../assets/img/products/product-4.webp";
 import deepDisinfect from "../../assets/img/products/product-5.webp";
-import aromatherapy from "../../assets/img/products/product-6.webp";
+import noMosquitosSummer from "../../assets/img/products/product-6.webp";
+import aromatherapy from "../../assets/img/products/product-7.webp";
 
 // Modal images
 import intenseRomanceBg from "../../assets/img/backgrounds/product-bg-1.webp";
@@ -34,6 +35,10 @@ const images = {
     deepDisinfect: {
         cardImage: deepDisinfect,
         modalImage: deepDisinfectBg
+    },
+    noMosquitosSummer: {
+        cardImage: noMosquitosSummer,
+        modalImage: noMosquitosBg
     },
     aromatherapy: {
         cardImage: aromatherapy,

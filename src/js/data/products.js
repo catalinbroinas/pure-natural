@@ -50,7 +50,7 @@ const products = [
             modalImage: images.noMosquitos.modalImage
         },
         name: 'No Mosquitos',
-        category: 'Spray anti-țânțari',
+        category: 'Spray anti-insecte',
         price: 20,
         amount: 100,
         composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
@@ -65,6 +65,19 @@ const products = [
         name: 'Deep Disinfect',
         category: 'Dezinfectant',
         price: 30,
+        amount: 100,
+        composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
+        description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
+    },
+    {
+        id: crypto.randomUUID(),
+        image: {
+            cardImage: images.noMosquitosSummer.cardImage,
+            modalImage: images.noMosquitosSummer.modalImage
+        },
+        name: 'No Mosquitos - Summer',
+        category: 'Spray anti-țânțari',
+        price: 20,
         amount: 100,
         composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
         description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
