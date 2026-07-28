@@ -1,3 +1,4 @@
+import { PRODUCT_CATEGORY } from "../constants/products";
 import images from "./productImages";
 
 const products = [
@@ -8,7 +9,7 @@ const products = [
             modalImage: images.intenseRomance.modalImage
         },
         name: 'Intense Romance',
-        category: 'Parfum',
+        category: PRODUCT_CATEGORY.PERFUME,
         price: 50,
         amount: 100,
         targetGroup: 'women',
@@ -22,7 +23,7 @@ const products = [
             modalImage: images.flowerPower.modalImage
         },
         name: 'Flower Power',
-        category: 'Parfum',
+        category: PRODUCT_CATEGORY.PERFUME,
         price: 50,
         amount: 100,
         targetGroup: 'women',
@@ -36,7 +37,7 @@ const products = [
             modalImage: images.citricJoy.modalImage
         },
         name: 'Citric Joy',
-        category: 'Parfum',
+        category: PRODUCT_CATEGORY.PERFUME,
         price: 50,
         amount: 100,
         targetGroup: 'men',
@@ -50,7 +51,7 @@ const products = [
             modalImage: images.noMosquitos.modalImage
         },
         name: 'No Mosquitos',
-        category: 'Spray anti-insecte',
+        category: PRODUCT_CATEGORY.MOSQUITO_SPRAY,
         price: 20,
         amount: 100,
         composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
@@ -63,7 +64,7 @@ const products = [
             modalImage: images.deepDisinfect.modalImage
         },
         name: 'Deep Disinfect',
-        category: 'Dezinfectant',
+        category: PRODUCT_CATEGORY.DISINFECTANT,
         price: 30,
         amount: 100,
         composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
@@ -76,7 +77,7 @@ const products = [
             modalImage: images.noMosquitosSummer.modalImage
         },
         name: 'No Mosquitos - Summer',
-        category: 'Spray anti-țânțari',
+        category: PRODUCT_CATEGORY.MOSQUITO_BITE_BALSAM,
         price: 20,
         amount: 100,
         composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
@@ -89,7 +90,7 @@ const products = [
             modalImage: images.aromatherapy.modalImage
         },
         name: 'Difuzor automat aromaterapie',
-        category: 'Aromaterapie',
+        category: PRODUCT_CATEGORY.AROMATHERAPY,
         price: 60,
         amount: 100,
         composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
