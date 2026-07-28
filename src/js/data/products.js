@@ -76,7 +76,7 @@ const products = [
             cardImage: images.noMosquitosSummer.cardImage,
             modalImage: images.noMosquitosSummer.modalImage
         },
-        name: 'No Mosquitos - Summer',
+        name: 'No Mosquitos - Balsam',
         category: PRODUCT_CATEGORY.MOSQUITO_BITE_BALSAM,
         price: 60,
         amount: 100,
