@@ -12,9 +12,9 @@ const products = [
         category: PRODUCT_CATEGORY.PERFUME,
         price: 70,
         amount: 100,
-        targetGroup: 'women',
-        composition: 'apă, uleiuri esențiale de trandafir, lavandă și portocale',
-        description: 'un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
+        targetGroup: 'all',
+        composition: 'alcool din cereale, apă, uleiuri esențiale pure de portocală*, trandafir și geraniu. *ingredient bio/ecologic',
+        description: 'Primul produs lansat din pasiune pentru ingrediente curate. Un parfum floral rafinat, cu note proaspete de portocală bio, ce aduce eleganță și prospețime în rutina ta zilnică.'
     },
     {
         id: crypto.randomUUID(),
