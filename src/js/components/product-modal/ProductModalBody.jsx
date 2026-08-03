@@ -76,19 +76,19 @@ function ProductDetails({
     const targetGroupLabel = {
         women: 'femei',
         men: 'bărbați',
-        all: 'toate genurile'
+        all: 'General (Unisex)'
     };
 
     const details = [
         amount && {
             icon: icons.amountIcon,
             title: 'Cantitate',
-            text: `Pet de plastic de ${amount}ml.`
+            text: `Sticlă de ${amount} ml.`
         },
         targetGroup && {
             icon: icons.targetGroupIcon[targetGroup],
             title: 'Grup țintă',
-            text: `Potrivit pentru ${targetGroupLabel[targetGroup]}.`
+            text: `${targetGroupLabel[targetGroup]}.`
         },
         composition && {
             icon: icons.compositionIcon,
