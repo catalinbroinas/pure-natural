@@ -14,7 +14,7 @@ const products = [
         amount: 100,
         targetGroup: 'all',
         composition: 'alcool din cereale, apă, uleiuri esențiale pure de portocală*, trandafir și geraniu. *ingredient bio/ecologic',
-        description: 'Primul produs lansat din pasiune pentru ingrediente curate. Un parfum floral rafinat, cu note proaspete de portocală bio, ce aduce eleganță și prospețime în rutina ta zilnică.'
+        description: 'Primul produs lansat din pasiune pentru ingrediente curate. Un parfum seducător și rafinat, ce îmbină notele dulci de trandafir și geraniu cu prospețimea portocalei bio, dăruind eleganță și strălucire fiecărei clipe.'
     },
     {
         id: crypto.randomUUID(),
