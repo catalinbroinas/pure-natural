@@ -27,8 +27,8 @@ const products = [
         price: 70,
         amount: 100,
         targetGroup: 'women',
-        composition: 'apă, uleiuri esențiale de trandafir, lavandă și portocale',
-        description: 'un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
+        composition: 'alcool din cereale, apă, uleiuri esențiale pure de trandafir, iasomie, geraniu și lavandă*. *ingredient bio/ecologic',
+        description: 'Al doilea parfum din gama Pure Natural. Un buchet floral bogat ce împletește delicatețea trandafirului și a iasomiei cu notele echilibrate de geraniu și lavandă bio, oferind un plus de rafinament și vitalitate în fiecare zi.'
     },
     {
         id: crypto.randomUUID(),
