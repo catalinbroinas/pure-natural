@@ -1,6 +1,6 @@
 import {
-    PRODUCT_TARGET_GROUP_ICONS,
-    PRODUCT_TARGET_GROUP_LABEL
+    PRODUCT_TARGET_GROUP_LABEL,
+    PRODUCT_DETAIL_ICONS
 } from "../../constants/products";
 
 function ProductModalBody({ 
@@ -66,30 +66,24 @@ function ProductDetails({
     composition,
     description
 }) {
-    const icons = {
-        amountIcon: 'fa-bottle-water',
-        compositionIcon: 'fa-leaf',
-        descriptionIcon: 'fa-bolt'
-    };
-
     const details = [
         amount && {
-            icon: icons.amountIcon,
+            icon: PRODUCT_DETAIL_ICONS.AMOUNT,
             title: 'Cantitate',
             text: `Sticlă de ${amount} ml.`
         },
         targetGroup && {
-            icon: PRODUCT_TARGET_GROUP_ICONS[targetGroup],
+            icon: PRODUCT_DETAIL_ICONS.TARGET_GROUP[targetGroup],
             title: 'Grup țintă',
             text: `${PRODUCT_TARGET_GROUP_LABEL[targetGroup]}.`
         },
         composition && {
-            icon: icons.compositionIcon,
+            icon: PRODUCT_DETAIL_ICONS.COMPOSITION,
             title: 'Compoziție',
             text: composition
         },
         description && {
-            icon: icons.descriptionIcon,
+            icon: PRODUCT_DETAIL_ICONS.DESCRIPTION,
             title: 'Descriere',
             text: description
         }

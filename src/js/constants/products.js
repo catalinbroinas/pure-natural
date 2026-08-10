@@ -29,8 +29,13 @@ export const PRODUCT_TARGET_GROUP_LABEL = {
 	[PRODUCT_TARGET_GROUP.ALL]: "General (Unisex)"
 };
 
-export const PRODUCT_TARGET_GROUP_ICONS = {
-	[PRODUCT_TARGET_GROUP.MEN]: "fa-mars",
-	[PRODUCT_TARGET_GROUP.WOMEN]: "fa-venus",
-	[PRODUCT_TARGET_GROUP.ALL]: "fa-mars-and-venus"
+export const PRODUCT_DETAIL_ICONS = {
+	AMOUNT: 'fa-bottle-water',
+	TARGET_GROUP: {
+		[PRODUCT_TARGET_GROUP.MEN]: 'fa-mars',
+		[PRODUCT_TARGET_GROUP.WOMEN]: 'fa-venus',
+		[PRODUCT_TARGET_GROUP.ALL]: 'fa-mars-and-venus'
+	},
+	COMPOSITION: 'fa-leaf',
+	DESCRIPTION: 'fa-bolt'
 };
