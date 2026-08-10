@@ -1,3 +1,7 @@
+import {
+    PRODUCT_TARGET_GROUP_ICONS,
+    PRODUCT_TARGET_GROUP_LABEL
+} from "../../constants/products";
 
 function ProductModalBody({ 
     product : { 
@@ -64,19 +68,8 @@ function ProductDetails({
 }) {
     const icons = {
         amountIcon: 'fa-bottle-water',
-        targetGroupIcon: {
-            women: 'fa-venus',
-            men: 'fa-mars',
-            all: 'fa-mars-and-venus'
-        },
         compositionIcon: 'fa-leaf',
         descriptionIcon: 'fa-bolt'
-    };
-
-    const targetGroupLabel = {
-        women: 'femei',
-        men: 'bărbați',
-        all: 'General (Unisex)'
     };
 
     const details = [
@@ -86,9 +79,9 @@ function ProductDetails({
             text: `Sticlă de ${amount} ml.`
         },
         targetGroup && {
-            icon: icons.targetGroupIcon[targetGroup],
+            icon: PRODUCT_TARGET_GROUP_ICONS[targetGroup],
             title: 'Grup țintă',
-            text: `${targetGroupLabel[targetGroup]}.`
+            text: `${PRODUCT_TARGET_GROUP_LABEL[targetGroup]}.`
         },
         composition && {
             icon: icons.compositionIcon,

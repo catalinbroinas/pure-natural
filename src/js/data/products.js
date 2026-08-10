@@ -1,4 +1,8 @@
-import { PRODUCT_CATEGORY } from "../constants/products";
+import {
+    PRODUCT_CATEGORY,
+    PRODUCT_TARGET_GROUP
+} from "../constants/products";
+
 import images from "./productImages";
 
 const products = [
@@ -12,7 +16,7 @@ const products = [
         category: PRODUCT_CATEGORY.PERFUME,
         price: 70,
         amount: 100,
-        targetGroup: 'all',
+        targetGroup: PRODUCT_TARGET_GROUP.ALL,
         composition: 'alcool din cereale, apă, uleiuri esențiale pure de portocală*, trandafir și geraniu. *ingredient bio/ecologic',
         description: 'Primul produs lansat din pasiune pentru ingrediente curate. Un parfum seducător și rafinat, ce îmbină notele dulci de trandafir și geraniu cu prospețimea portocalei bio, dăruind eleganță și strălucire fiecărei clipe.'
     },
@@ -26,7 +30,7 @@ const products = [
         category: PRODUCT_CATEGORY.PERFUME,
         price: 70,
         amount: 100,
-        targetGroup: 'women',
+        targetGroup: PRODUCT_TARGET_GROUP.WOMEN,
         composition: 'alcool din cereale, apă, uleiuri esențiale pure de trandafir, iasomie, geraniu și lavandă*. *ingredient bio/ecologic',
         description: 'Al doilea parfum din gama Pure Natural. Un buchet floral bogat ce împletește delicatețea trandafirului și a iasomiei cu notele echilibrate de geraniu și lavandă bio, oferind un plus de rafinament și vitalitate în fiecare zi.'
     },
@@ -40,7 +44,7 @@ const products = [
         category: PRODUCT_CATEGORY.PERFUME,
         price: 70,
         amount: 100,
-        targetGroup: 'men',
+        targetGroup: PRODUCT_TARGET_GROUP.MEN,
         composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
         description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
