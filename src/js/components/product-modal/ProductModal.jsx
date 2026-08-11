@@ -1,6 +1,6 @@
-import ProductModalHeader from "./product-modal/ProductModalHeader";
-import ProductModalBody from "./product-modal/ProductModalBody";
-import ProductModalFooter from "./product-modal/ProductModalFooter";
+import ProductModalHeader from "./ProductModalHeader";
+import ProductModalBody from "./ProductModalBody";
+import ProductModalFooter from "./ProductModalFooter";
 
 function ProductModal({ product }) {
     return (

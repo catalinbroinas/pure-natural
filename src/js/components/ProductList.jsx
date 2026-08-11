@@ -1,5 +1,5 @@
 import ProductCard from "./ProductCard";
-import ProductModal from "./ProductModal";
+import ProductModal from "./product-modal/ProductModal";
 
 function ProductList({ products }) {
     return (
