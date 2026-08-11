@@ -16,7 +16,7 @@ function ProductModalBody({ product }) {
     return (
         <div className="modal-body">
             <div className="row align-items-center gx-xl-5 g-lg-4 g-md-5 g-4">
-                <ProductName image={image.modalImage} name={name} />
+                <ProductVisual image={image.modalImage} name={name} />
 
                 <ProductDetails
                     amount={amount}
@@ -29,7 +29,7 @@ function ProductModalBody({ product }) {
     );
 }
 
-function ProductName({ image, name }) {
+function ProductVisual({ image, name }) {
     return (
         <div className="col-xl-5 col-lg-6 col-12">
             <div
@@ -41,14 +41,18 @@ function ProductName({ image, name }) {
                     src={image}
                     className="w-100"
                     alt=""
+                    loading="lazy"
                 />
 
                 <div className="mask mask-dark">
                     <div className="d-flex justify-content-center align-items-center h-100">
                         <div className="px-4 py-5 px-md-5 text-white text-center">
-                            <h3 className="text-uppercase fw-bold m-0">
+                            <span
+                                className="h3 text-uppercase fw-bold m-0"
+                                aria-hidden="true"
+                            >
                                 {name}
-                            </h3>
+                            </span>
                         </div>
                     </div>
                 </div>
