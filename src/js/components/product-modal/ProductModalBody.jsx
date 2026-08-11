@@ -82,7 +82,8 @@ function ProductDetails({
 
         composition && {
             ...PRODUCT_DETAIL.COMPOSITION,
-            text: composition
+            text: composition.text,
+            note: composition.note
         },
 
         description && {
@@ -100,6 +101,7 @@ function ProductDetails({
                         icon={item.icon}
                         title={item.title}
                         text={item.text}
+                        note={item.note}
                     />
                 ))}
             </div>
@@ -107,7 +109,7 @@ function ProductDetails({
     );
 }
 
-function ProductDetailsItem({ icon, title, text }) {
+function ProductDetailsItem({ icon, title, text, note }) {
     const iconClass = `fa-solid ${icon} text-white fa-lg fa-fw`;
 
     return (
@@ -120,7 +122,14 @@ function ProductDetailsItem({ icon, title, text }) {
 
             <div className="flex-grow-1 ms-4">
                 <h6 className="fw-bold mb-1">{title}</h6>
+
                 <p className="text-muted-strong mb-0">{text}</p>
+
+                {note && (
+                    <p className="text-muted-strong mb-0">
+                        {note}
+                    </p>
+                )}
             </div>
         </div>
     );
