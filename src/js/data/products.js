@@ -7,6 +7,7 @@ import {
 import images from "./productImages";
 
 const products = [
+    // Intense Romance
     {
         id: crypto.randomUUID(),
 
@@ -26,10 +27,16 @@ const products = [
         },
 
         targetGroup: PRODUCT_TARGET_GROUP.ALL,
-        composition: 'alcool din cereale, apă, uleiuri esențiale pure de portocală*, trandafir și geraniu. *ingredient bio/ecologic',
+
+        composition: {
+            text: 'alcool din cereale, apă, uleiuri esențiale pure de portocală*, trandafir și geraniu.',
+            note: '* - ingredient bio/ecologic'
+        },
+
         description: 'Primul produs lansat din pasiune pentru ingrediente curate. Un parfum seducător și rafinat, ce îmbină notele dulci de trandafir și geraniu cu prospețimea portocalei bio, dăruind eleganță și strălucire fiecărei clipe.'
     },
 
+    // Flower Power
     {
         id: crypto.randomUUID(),
 
@@ -49,9 +56,15 @@ const products = [
         },
 
         targetGroup: PRODUCT_TARGET_GROUP.WOMEN,
-        composition: 'alcool din cereale, apă, uleiuri esențiale pure de trandafir, iasomie, geraniu și lavandă*. *ingredient bio/ecologic',
+        composition: {
+            text: 'alcool din cereale, apă, uleiuri esențiale pure de trandafir, iasomie, geraniu și lavandă*.',
+            note: '* - ingredient bio/ecologic'
+        },
+
         description: 'Al doilea parfum din gama Pure Natural. Un buchet floral bogat ce împletește delicatețea trandafirului și a iasomiei cu notele echilibrate de geraniu și lavandă bio, oferind un plus de rafinament și vitalitate în fiecare zi.'
     },
+
+    // Citric Joy
     {
         id: crypto.randomUUID(),
 
@@ -71,9 +84,15 @@ const products = [
         },
 
         targetGroup: PRODUCT_TARGET_GROUP.MEN,
-        composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
+
+        composition: {
+            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
+        },
+
         description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
+
+    // No Mosquitos
     {
         id: crypto.randomUUID(),
 
@@ -92,9 +111,14 @@ const products = [
             package: PRODUCT_PACKAGE.BOTTLE
         },
 
-        composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
+        composition: {
+            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
+        },
+
         description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
+
+    // Deep Disinfect
     {
         id: crypto.randomUUID(),
 
@@ -113,9 +137,14 @@ const products = [
             package: PRODUCT_PACKAGE.BOTTLE
         },
 
-        composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
+        composition: {
+            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
+        },
+
         description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
+
+    // No Mosquitos - Balsam
     {
         id: crypto.randomUUID(),
 
@@ -134,9 +163,14 @@ const products = [
             package: PRODUCT_PACKAGE.BOTTLE
         },
 
-        composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
+        composition: {
+            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
+        },
+
         description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
+
+    // Difuzor automat aromaterapie
     {
         id: crypto.randomUUID(),
 
@@ -155,7 +189,10 @@ const products = [
             package: PRODUCT_PACKAGE.BOTTLE
         },
 
-        composition: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale',
+        composition: {
+            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
+        },
+
         description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     }
 ];
