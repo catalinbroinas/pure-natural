@@ -23,19 +23,33 @@ export const PRODUCT_TARGET_GROUP = {
 	ALL: "all"
 };
 
-export const PRODUCT_TARGET_GROUP_LABEL = {
-	[PRODUCT_TARGET_GROUP.MEN]: "Potrivit pentru bărbați",
-	[PRODUCT_TARGET_GROUP.WOMEN]: "Potrivit pentru femei",
-	[PRODUCT_TARGET_GROUP.ALL]: "General (Unisex)"
-};
-
-export const PRODUCT_DETAIL_ICONS = {
-	AMOUNT: 'fa-bottle-water',
-	TARGET_GROUP: {
-		[PRODUCT_TARGET_GROUP.MEN]: 'fa-mars',
-		[PRODUCT_TARGET_GROUP.WOMEN]: 'fa-venus',
-		[PRODUCT_TARGET_GROUP.ALL]: 'fa-mars-and-venus'
+export const PRODUCT_DETAIL = {
+	AMOUNT: {
+		icon: 'fa-bottle-water',
+		title: 'Cantitate'
 	},
-	COMPOSITION: 'fa-leaf',
-	DESCRIPTION: 'fa-bolt'
+
+	TARGET_GROUP: {
+		icon: {
+			[PRODUCT_TARGET_GROUP.MEN]: 'fa-mars',
+			[PRODUCT_TARGET_GROUP.WOMEN]: 'fa-venus',
+			[PRODUCT_TARGET_GROUP.ALL]: 'fa-mars-and-venus'
+		},
+		title: 'Grup țintă',
+		label: {
+			[PRODUCT_TARGET_GROUP.MEN]: 'Potrivit pentru bărbați.',
+			[PRODUCT_TARGET_GROUP.WOMEN]: 'Potrivit pentru femei.',
+			[PRODUCT_TARGET_GROUP.ALL]: 'General (Unisex).'
+		}
+	},
+
+	COMPOSITION: {
+		icon: 'fa-leaf',
+		title: 'Compoziție'
+	},
+
+	DESCRIPTION: {
+		icon: 'fa-bolt',
+		title: 'Descriere'
+	}
 };

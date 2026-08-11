@@ -1,7 +1,4 @@
-import {
-    PRODUCT_TARGET_GROUP_LABEL,
-    PRODUCT_DETAIL_ICONS
-} from "../../constants/products";
+import { PRODUCT_DETAIL } from "../../constants/products";
 
 function ProductModalBody({ product }) {
     const {
@@ -73,23 +70,23 @@ function ProductDetails({
 }) {
     const details = [
         amount && {
-            icon: PRODUCT_DETAIL_ICONS.AMOUNT,
-            title: 'Cantitate',
+            ...PRODUCT_DETAIL.AMOUNT,
             text: `Sticlă de ${amount} ml.`
         },
+
         targetGroup && {
-            icon: PRODUCT_DETAIL_ICONS.TARGET_GROUP[targetGroup],
-            title: 'Grup țintă',
-            text: `${PRODUCT_TARGET_GROUP_LABEL[targetGroup]}.`
+            icon: PRODUCT_DETAIL.TARGET_GROUP.icon[targetGroup],
+            title: PRODUCT_DETAIL.TARGET_GROUP.title,
+            text: PRODUCT_DETAIL.TARGET_GROUP.label[targetGroup]
         },
+
         composition && {
-            icon: PRODUCT_DETAIL_ICONS.COMPOSITION,
-            title: 'Compoziție',
+            ...PRODUCT_DETAIL.COMPOSITION,
             text: composition
         },
+
         description && {
-            icon: PRODUCT_DETAIL_ICONS.DESCRIPTION,
-            title: 'Descriere',
+            ...PRODUCT_DETAIL.DESCRIPTION,
             text: description
         }
     ].filter(Boolean);
