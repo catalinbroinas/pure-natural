@@ -3,21 +3,22 @@ import {
     PRODUCT_DETAIL_ICONS
 } from "../../constants/products";
 
-function ProductModalBody({ 
-    product : { 
+function ProductModalBody({ product }) {
+    const {
         name,
-        image: productBackground,
+        image,
         amount,
         targetGroup,
         composition,
         description
-     }
-}) {
+    } = product;
+
     return (
         <div className="modal-body">
             <div className="row align-items-center gx-xl-5 g-lg-4 g-md-5 g-4">
-                <ProductName image={productBackground.modalImage} name={name} />
-                <ProductDetails 
+                <ProductName image={image.modalImage} name={name} />
+
+                <ProductDetails
                     amount={amount}
                     targetGroup={targetGroup}
                     composition={composition}
