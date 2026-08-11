@@ -4,7 +4,7 @@ function ProductModalBody({ product }) {
     const {
         name,
         image,
-        amount,
+        quantity,
         targetGroup,
         composition,
         description
@@ -16,7 +16,7 @@ function ProductModalBody({ product }) {
                 <ProductVisual image={image.modalImage} name={name} />
 
                 <ProductDetails
-                    amount={amount}
+                    quantity={quantity}
                     targetGroup={targetGroup}
                     composition={composition}
                     description={description}
@@ -63,15 +63,15 @@ function ProductVisual({ image, name }) {
 }
 
 function ProductDetails({
-    amount,
+    quantity,
     targetGroup,
     composition,
     description
 }) {
     const details = [
-        amount && {
-            ...PRODUCT_DETAIL.AMOUNT,
-            text: `Sticlă de ${amount} ml.`
+        quantity && {
+            ...PRODUCT_DETAIL.QUANTITY,
+            text: `${quantity.package} de ${quantity.amount} ${quantity.unit}.`
         },
 
         targetGroup && {

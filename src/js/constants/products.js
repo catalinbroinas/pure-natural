@@ -23,8 +23,12 @@ export const PRODUCT_TARGET_GROUP = {
 	ALL: "all"
 };
 
+export const PRODUCT_PACKAGE = {
+	BOTTLE: 'Sticlă'
+};
+
 export const PRODUCT_DETAIL = {
-	AMOUNT: {
+	QUANTITY: {
 		icon: 'fa-bottle-water',
 		title: 'Cantitate'
 	},
