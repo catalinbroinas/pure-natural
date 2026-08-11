@@ -100,7 +100,7 @@ function ProductDetails({
                  {details.map((item, index) => (
                     <ProductDetailsItem
                         key={index}
-                        iconClass={item.icon}
+                        icon={item.icon}
                         title={item.title}
                         text={item.text}
                     />
@@ -110,12 +110,14 @@ function ProductDetails({
     );
 }
 
-function ProductDetailsItem({ iconClass, title, text }) {
+function ProductDetailsItem({ icon, title, text }) {
+    const iconClass = `fa-solid ${icon} text-white fa-lg fa-fw`;
+
     return (
         <div className="d-flex align-items-start">
             <div className="flex-shrink-0">
                 <div className="rounded-4 shadow-2-strong bg-brand p-3">
-                    <i className={`fa-solid ${iconClass} text-white fa-lg fa-fw`}></i>
+                    <i className={iconClass} aria-hidden="true"></i>
                 </div>
             </div>
 
