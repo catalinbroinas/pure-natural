@@ -132,7 +132,7 @@ const products = [
         },
     },
 
-    // No Mosquitos - Balsam
+    // No Mosquitos - Ediție limitată
     {
         id: crypto.randomUUID(),
 
@@ -141,7 +141,7 @@ const products = [
             modalImage: images.noMosquitosSummer.modalImage
         },
 
-        name: 'No Mosquitos - Balsam',
+        name: 'No Mosquitos - Ediție limitată',
         category: PRODUCT_CATEGORY.MOSQUITO_BITE_BALSAM,
         price: 60,
 
