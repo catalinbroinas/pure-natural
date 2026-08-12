@@ -4,7 +4,7 @@ export const PRODUCT_CATEGORY = {
 	DISINFECTANT: "Dezinfectant",
 	AROMATHERAPY: "Aromaterapie",
 	MOSQUITO_SPRAY: "Spray împotriva insectelor",
-	MOSQUITO_BITE_BALSAM: "Balsam împotriva țânțarilor"
+	MOSQUITO_BITE_BALSAM: "Balsam împotriva insectelor"
 };
 
 export const PRODUCT_DEFAULT_ICON = 'fa-leaf';
