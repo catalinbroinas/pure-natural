@@ -126,8 +126,12 @@ function ProductDetailsItem({ icon, title, text, note }) {
                 <p className="text-muted-strong mb-0">{text}</p>
 
                 {note && (
-                    <p className="text-muted-strong mb-0">
-                        {note}
+                    <p className="text-muted-strong mb-0 mt-1">
+                        <i
+                            className="fa-solid fa-asterisk small me-2"
+                            aria-hidden="true"
+                        ></i>
+                        <span className="small">{note}</span>
                     </p>
                 )}
             </div>

@@ -30,7 +30,7 @@ const products = [
 
         composition: {
             text: 'alcool din cereale, apă, uleiuri esențiale pure de portocală*, trandafir și geraniu.',
-            note: '* - ingredient bio/ecologic'
+            note: 'ingredient bio/ecologic'
         },
 
         description: 'Primul produs lansat din pasiune pentru ingrediente curate. Un parfum seducător și rafinat, ce îmbină notele dulci de trandafir și geraniu cu prospețimea portocalei bio, dăruind eleganță și strălucire fiecărei clipe.'
@@ -58,7 +58,7 @@ const products = [
         targetGroup: PRODUCT_TARGET_GROUP.WOMEN,
         composition: {
             text: 'alcool din cereale, apă, uleiuri esențiale pure de trandafir, iasomie, geraniu și lavandă*.',
-            note: '* - ingredient bio/ecologic'
+            note: 'ingredient bio/ecologic'
         },
 
         description: 'Al doilea parfum din gama Pure Natural. Un buchet floral bogat ce împletește delicatețea trandafirului și a iasomiei cu notele echilibrate de geraniu și lavandă bio, oferind un plus de rafinament și vitalitate în fiecare zi.'
