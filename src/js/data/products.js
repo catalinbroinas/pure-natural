@@ -110,12 +110,6 @@ const products = [
             unit: 'ml',
             package: PRODUCT_PACKAGE.BOTTLE
         },
-
-        composition: {
-            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
-        },
-
-        description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
 
     // Deep Disinfect
@@ -136,12 +130,6 @@ const products = [
             unit: 'ml',
             package: PRODUCT_PACKAGE.BOTTLE
         },
-
-        composition: {
-            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
-        },
-
-        description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
 
     // No Mosquitos - Balsam
@@ -162,12 +150,6 @@ const products = [
             unit: 'ml',
             package: PRODUCT_PACKAGE.BOTTLE
         },
-
-        composition: {
-            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
-        },
-
-        description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
     },
 
     // Difuzor automat aromaterapie
@@ -183,17 +165,7 @@ const products = [
         category: PRODUCT_CATEGORY.AROMATHERAPY,
         price: 60,
 
-        quantity: {
-            amount: 100,
-            unit: 'ml',
-            package: PRODUCT_PACKAGE.BOTTLE
-        },
-
-        composition: {
-            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
-        },
-
-        description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
+        description: 'Difuzor de aromaterapie.'
     }
 ];
 
