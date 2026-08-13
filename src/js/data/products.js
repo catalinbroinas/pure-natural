@@ -86,10 +86,11 @@ const products = [
         targetGroup: PRODUCT_TARGET_GROUP.MEN,
 
         composition: {
-            text: 'Apă, uleiuri esențiale de trandafir, lavandă și portocale'
+            text: 'alcool din cereale, apă, uleiuri esențiale pure de portocală*, bergamotă (fără bergapten), palmarosa*, vanilie și petitgrain*.',
+            note: 'ingredient bio/ecologic'
         },
 
-        description: 'Un parfum floral-energizant ce aduce prospețime și eleganță în rutina ta zilnică'
+        description: 'O explozie efervescentă ce unește notele citrice radiante de portocală bio și bergamotă cu delicatețea palmarosei bio, dulceața vaniliei și profunzimea petitgrainului bio, aducând bună dispoziție și un zâmbet luminos pe chipul tău.'
     },
 
     // No Mosquitos
