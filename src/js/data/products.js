@@ -61,7 +61,7 @@ const products = [
             note: 'ingredient bio/ecologic'
         },
 
-        description: 'Al doilea parfum din gama Pure Natural. Un buchet floral bogat ce împletește delicatețea trandafirului și a iasomiei cu notele echilibrate de geraniu și lavandă bio, oferind un plus de rafinament și vitalitate în fiecare zi.'
+        description: 'Un buchet floral bogat ce împletește delicatețea trandafirului și a iasomiei cu notele echilibrate de geraniu și lavandă bio, oferind un plus de rafinament și vitalitate în fiecare zi.'
     },
 
     // Citric Joy
