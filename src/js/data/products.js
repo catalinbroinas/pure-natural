@@ -33,7 +33,7 @@ const products = [
             note: 'ingredient bio/ecologic'
         },
 
-        description: 'Primul produs lansat din pasiune pentru ingrediente curate. Un parfum seducător și rafinat, ce îmbină notele dulci de trandafir și geraniu cu prospețimea portocalei bio, dăruind eleganță și strălucire fiecărei clipe.'
+        description: 'Un parfum seducător și rafinat, ce îmbină notele dulci de trandafir și geraniu cu prospețimea portocalei bio, dăruind eleganță și strălucire fiecărei clipe.'
     },
 
     // Flower Power
