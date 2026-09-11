@@ -131,6 +131,8 @@ const products = [
             unit: 'ml',
             package: PRODUCT_PACKAGE.BOTTLE
         },
+
+        description: "Protecție pură și îngrijire delicată într-un singur gest. O formulă naturală îmbogățită cu glicerină vegetală, ce îmbină puterea purificatoare a uleiurilor de oregano și tea tree bio cu notele fine de iasomie și palmarosa bio, pentru a lăsa pielea curată, hidratată și catifelată, fără a usca mâinile.",
     },
 
     // No Mosquitos - Ediție limitată
