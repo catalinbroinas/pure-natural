@@ -132,6 +132,11 @@ const products = [
             package: PRODUCT_PACKAGE.BOTTLE
         },
 
+        composition: {
+            text: "alcool din cereale, apă, glicerină vegetală, uleiuri esențiale pure de palmarosa*, iasomie, tea tree* și oregano.",
+            note: 'ingrediente bio/ecologice'
+        },
+
         description: "Protecție pură și îngrijire delicată într-un singur gest. O formulă naturală îmbogățită cu glicerină vegetală, ce îmbină puterea purificatoare a uleiurilor de oregano și tea tree bio cu notele fine de iasomie și palmarosa bio, pentru a lăsa pielea curată, hidratată și catifelată, fără a usca mâinile.",
     },
 
