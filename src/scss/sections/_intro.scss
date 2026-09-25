@@ -28,13 +28,29 @@
   &__content { text-align: center; }
 
   &__title {
-    @include custom-text($font-title, 700, 5rem, $text-light);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: $font-title;
+    color: $text-light;
+
     margin-bottom: 1.5rem;
+
+    &-main {
+      display: block;
+      font-weight: 700;
+      font-size: 5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 0.5rem;
+    }
+
+    &-secondary {
+      display: block;
+      font-weight: 500;
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
   }
 
   &__subtitle {
-    @include custom-text($font-text, 400, 2.5rem, $text-light);
+    @include custom-text($font-text, 400, 2rem, $text-light);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     margin-bottom: 1.5rem;
   }
