@@ -165,6 +165,13 @@ const products = [
             unit: 'ml',
             package: PRODUCT_PACKAGE.BOTTLE
         },
+
+        composition: {
+            text: 'ulei vegetal de andiroba, uleiuri esențiale pure de geraniu, lavandă*, citronella, lemongrass* și eucalipt.',
+            note: 'ingrediente bio/ecologice'
+        },
+
+        description: 'Scutul concentrat împotriva insectelor în mijlocul naturii. O formulă botanică bogată, ce îmbină textura hrănitoare a uleiului vegetal de andiroba cu puterea uleiurilor esențiale pure de geraniu, citronella și eucalipt, alături de efectul liniștitor al lavandei bio și prospețimea radiantă a lemongrassului bio. Un balsam intens, conceput pentru aplicări precise, ce se absoarbe blând în piele, ține eficient insectele la distanță și protejează pielea în orice aventură.'
     },
 
     // Difuzor automat aromaterapie
