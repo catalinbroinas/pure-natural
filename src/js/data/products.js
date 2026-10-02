@@ -111,6 +111,13 @@ const products = [
             unit: 'ml',
             package: PRODUCT_PACKAGE.BOTTLE
         },
+
+        composition: {
+            text: 'apă, alcool din cereale, solubilizant natural, uleiuri esențiale pure de geraniu, lavandă*, citronella, lemongrass* și eucalipt.',
+            note: 'ingrediente bio/ecologice'
+        },
+
+        description: 'Protecție naturală și seri liniștite în mijlocul naturii. O formulă botanică pe bază de solubilizant natural și alcool din cereale, ce îmbină notele fresh de citronella, eucalipt și geraniu cu efectul liniștitor al lavandei bio și prospeținea radiantă a lemongrassului bio, pentru a ține eficient insectele la distanță și a oferi momente de relaxare în aer liber.'
     },
 
     // Deep Disinfect
