@@ -161,7 +161,7 @@ const products = [
         price: 60,
 
         quantity: {
-            amount: 100,
+            amount: 50,
             unit: 'ml',
             package: PRODUCT_PACKAGE.BOTTLE
         },
