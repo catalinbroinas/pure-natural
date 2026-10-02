@@ -87,7 +87,7 @@ const products = [
 
         composition: {
             text: 'alcool din cereale, apă, uleiuri esențiale pure de portocală*, bergamotă (fără bergapten), palmarosa*, vanilie și petitgrain*.',
-            note: 'ingredient bio/ecologic'
+            note: 'ingrediente bio/ecologice'
         },
 
         description: 'O explozie efervescentă ce unește notele citrice radiante de portocală bio și bergamotă cu delicatețea palmarosei bio, dulceața vaniliei și profunzimea petitgrainului bio, aducând bună dispoziție și un zâmbet luminos pe chipul tău.'
