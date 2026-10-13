@@ -147,33 +147,6 @@ const products = [
         description: "Protecție pură și îngrijire delicată într-un singur gest. O formulă naturală îmbogățită cu glicerină vegetală, ce îmbină puterea purificatoare a uleiurilor de oregano și tea tree bio cu notele fine de iasomie și palmarosa bio, pentru a lăsa pielea curată, hidratată și catifelată, fără a usca mâinile.",
     },
 
-    // No Mosquitos - Ediție limitată
-    {
-        id: crypto.randomUUID(),
-
-        image: {
-            cardImage: images.noMosquitosSummer.cardImage,
-            modalImage: images.noMosquitosSummer.modalImage
-        },
-
-        name: 'No Mosquitos - Ediție limitată',
-        category: PRODUCT_CATEGORY.MOSQUITO_BITE_BALSAM,
-        price: 60,
-
-        quantity: {
-            amount: 50,
-            unit: 'ml',
-            package: PRODUCT_PACKAGE.BOTTLE
-        },
-
-        composition: {
-            text: 'ulei vegetal de andiroba, uleiuri esențiale pure de geraniu, lavandă*, citronella, lemongrass* și eucalipt.',
-            note: 'ingrediente bio/ecologice'
-        },
-
-        description: 'Scutul concentrat împotriva insectelor în mijlocul naturii. O formulă botanică bogată, ce îmbină textura hrănitoare a uleiului vegetal de andiroba cu puterea uleiurilor esențiale pure de geraniu, citronella și eucalipt, alături de efectul liniștitor al lavandei bio și prospețimea radiantă a lemongrassului bio. Un balsam intens, conceput pentru aplicări precise, ce se absoarbe blând în piele, ține eficient insectele la distanță și protejează pielea în orice aventură.'
-    },
-
     // Difuzor automat aromaterapie
     {
         id: crypto.randomUUID(),
