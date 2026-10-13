@@ -93,7 +93,7 @@ const products = [
         description: 'O explozie efervescentă ce unește notele citrice radiante de portocală bio și bergamotă cu delicatețea palmarosei bio, dulceața vaniliei și profunzimea petitgrainului bio, aducând bună dispoziție și un zâmbet luminos pe chipul tău.'
     },
 
-    // No Mosquitos
+    // No Bites
     {
         id: crypto.randomUUID(),
 
@@ -102,7 +102,7 @@ const products = [
             modalImage: images.noMosquitos.modalImage
         },
 
-        name: 'No Mosquitos',
+        name: 'No Bites',
         category: PRODUCT_CATEGORY.MOSQUITO_SPRAY,
         price: 40,
 
