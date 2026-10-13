@@ -29,7 +29,7 @@ function ProductCard({ product }) {
                 >
                     <img
                         src={productImage.cardImage}
-                        className="object-fit-cover"
+                        className="card-image"
                         alt={name}
                         loading="lazy"
                     />

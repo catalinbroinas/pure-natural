@@ -7,6 +7,10 @@
 
 // Products
 .card-product {
+  .card-image {
+    object-fit: cover;
+  }
+
   .card-title {
     @include custom-text($font-title, 700, 1.1rem, $text-accent);
     text-transform: uppercase;
