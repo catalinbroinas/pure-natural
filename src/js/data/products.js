@@ -160,6 +160,14 @@ const products = [
         category: PRODUCT_CATEGORY.AROMATHERAPY,
         price: 60,
 
+        instructions: 'Alege una dintre cele 7 trepte de difuzare pentru a adapta frecvența pulverizărilor la dimensiunea încăperii și la intensitatea parfumului dorită.',
+
+        features: 'Pulverizările periodice permit un consum optimizat al rezervei și contribuie la menținerea unei experiențe olfactive plăcute, fără a necesita oprirea manuală.',
+
+        compatibility: 'Recipientul interior poate fi reumplut după golire și este compatibil cu rezervele Pure Natural dedicate aromaterapiei',
+
+        specifications: 'Acumulatorul integrat permite amplasarea difuzorului în diferite încăperi, fără a depinde permanent de o priză.',
+
         description: 'Transformați-vă spațiul personal într-o oază de liniște și prospețime. Acest pulverizator automat pentru aromaterapie îmbină tehnologia modernă cu eleganta pură a esențelor naturale, eliberând treptat un voal fin de parfum pentru o atmosferă mereu primitoare. '
     }
 ];
