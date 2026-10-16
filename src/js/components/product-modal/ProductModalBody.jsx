@@ -7,7 +7,11 @@ function ProductModalBody({ product }) {
         quantity,
         targetGroup,
         composition,
-        description
+        description,
+        instructions,
+        features,
+        compatibility,
+        specifications
     } = product;
 
     return (
@@ -20,6 +24,10 @@ function ProductModalBody({ product }) {
                     targetGroup={targetGroup}
                     composition={composition}
                     description={description}
+                    instructions={instructions}
+                    features={features}
+                    compatibility={compatibility}
+                    specifications={specifications}
                 />
             </div>
         </div>
@@ -66,7 +74,11 @@ function ProductDetails({
     quantity,
     targetGroup,
     composition,
-    description
+    description,
+    instructions,
+    features,
+    compatibility,
+    specifications
 }) {
     const details = [
         quantity && {
@@ -89,6 +101,30 @@ function ProductDetails({
         description && {
             ...PRODUCT_DETAIL.DESCRIPTION,
             text: description
+        },
+
+        instructions && {
+            icon: 'fa-sliders',
+            title: 'Setări de difuzare',
+            text: instructions
+        },
+
+        features && {
+            icon: 'fa-stopwatch',
+            title: 'Difuzare automată',
+            text: features
+        },
+
+        compatibility && {
+            icon: 'fa-repeat',
+            title: 'Reîncărcare și compatibilitate',
+            text: compatibility
+        },
+
+        specifications && {
+            icon: 'fa-battery-full',
+            title: 'Autonomie și portabilitate',
+            text: specifications
         }
     ].filter(Boolean);
 
