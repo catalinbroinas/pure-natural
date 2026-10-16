@@ -2,7 +2,7 @@
 import '../scss/main.scss';
 
 // MDBootstrap
-import { Modal, Ripple, Collapse, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
+import { Ripple, Collapse, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
 
 // Modules
 import { NavbarManager } from './modules/dom/navbarManager';
@@ -34,7 +34,7 @@ function MainDomManager() {
     };
 
     const initApp = () => {
-        initMDB({ Modal, Ripple, Collapse });
+        initMDB({ Ripple, Collapse });
         addEvents();
         renderProducts();
     };
