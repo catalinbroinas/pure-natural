@@ -7,14 +7,14 @@ import {
 } from "../constants/products";
 
 // MDB
-import { Modal, Ripple, initMDB } from "mdb-ui-kit/js/mdb.es.min";
+import { Modal, initMDB } from "mdb-ui-kit/js/mdb.es.min";
 
 function ProductCard({ product }) {
     const { image: productImage, name, category, price } = product;
     const icon = PRODUCT_CATEGORY_ICONS[category] ?? PRODUCT_DEFAULT_ICON;
 
     useEffect(() => {
-        initMDB({ Ripple, Modal });
+        initMDB({ Modal });
     }, []);
 
     return (
@@ -24,7 +24,7 @@ function ProductCard({ product }) {
             >
                 <div
                 className="bg-image hover-overlay hover-zoom no-hover-mobile ratio ratio-4x3"
-                data-mdb-ripple-init=""
+                data-mdb-ripple-init
                 data-mdb-ripple-color="light"
                 >
                     <img
