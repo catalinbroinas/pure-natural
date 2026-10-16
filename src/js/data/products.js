@@ -160,7 +160,7 @@ const products = [
         category: PRODUCT_CATEGORY.AROMATHERAPY,
         price: 60,
 
-        description: 'Difuzor de aromaterapie.'
+        description: 'Transformați-vă spațiul personal într-o oază de liniște și prospețime. Acest pulverizator automat pentru aromaterapie îmbină tehnologia modernă cu eleganta pură a esențelor naturale, eliberând treptat un voal fin de parfum pentru o atmosferă mereu primitoare. '
     }
 ];
 
