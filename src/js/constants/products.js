@@ -53,7 +53,7 @@ export const PRODUCT_DETAIL = {
 	},
 
 	DESCRIPTION: {
-		icon: 'fa-bolt',
+		icon: 'fa-align-left',
 		title: 'Descriere'
 	}
 };
