@@ -82,6 +82,12 @@
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 
     0 2px 4px rgba(0, 0, 0, 0.05);
 
+    .navbar-collapse {
+      max-height: calc(100dvh - $navbar-height);
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+    }
+
     .navbar-brand {
       display: flex;
       justify-content: center;
