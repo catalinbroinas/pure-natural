@@ -1,7 +1,8 @@
+import { defineConfig } from 'vite';
 import imagemin from 'vite-plugin-imagemin';
 import react from '@vitejs/plugin-react';
 
-export default {
+export default defineConfig({
     server: {
         port: 5173,
         open: true
@@ -27,6 +28,7 @@ export default {
         },
     },
     plugins: [
+        react(),
         imagemin({
             verbose: true,
             gifsicle: {
@@ -49,6 +51,5 @@ export default {
                 ]
             }
         }),
-        react()
     ],
-}
+});
