@@ -18,11 +18,11 @@
   }
 
   .card-subtitle {
-    @include custom-text($font-text, 400, 1rem, $text-main);
+    @include custom-text($font-text, 400, 1rem, $text-primary);
   }
 
   .price {
-    @include custom-text($font-title, 500, 1.2rem, $text-main);
+    @include custom-text($font-title, 500, 1.2rem, $text-primary);
     text-transform: lowercase;
   }
 
@@ -53,12 +53,12 @@
   }
 
   .card-subtitle {
-    @include custom-text($font-title, 600, 1rem, $text-dark);
+    @include custom-text($font-title, 600, 1rem, $text-secondary);
     letter-spacing: 0.015rem;
   }
 
   .card-text {
-    @include custom-text($font-text, 400, 1rem, $text-main);
+    @include custom-text($font-text, 400, 1rem, $text-primary);
   }
 
   @media (max-width: 991.98px) {
@@ -68,7 +68,7 @@
 
 // Team
 .card-team {
-  background-color: $background-primary;
+  background-color: $bg-surface;
   position: relative;
   z-index: 1;
 
@@ -84,7 +84,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, $background-accent 50%, $background-primary 50%);
+      background: linear-gradient(to bottom, $bg-accent 50%, $bg-surface 50%);
       z-index: 1;
     }
   }  
@@ -128,7 +128,7 @@
   }
 
   .card-text {
-    @include custom-text($font-text, 400, 1rem, $text-dark);
+    @include custom-text($font-text, 400, 1rem, $text-secondary);
     margin-bottom: 0;
   }
 

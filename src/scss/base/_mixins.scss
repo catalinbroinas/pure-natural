@@ -7,21 +7,21 @@
 @mixin title($font-size: 2rem) {
   font-family: $font-title, sans-serif;
   font-weight: 700;
-  color: $text-main;
+  color: $text-primary;
   font-size: $font-size;
 }
 
 @mixin subtitle($font-size: 1.5rem) {
   font-family: $font-text, sans-serif;
   font-weight: 600;
-  color: $text-main;
+  color: $text-primary;
   font-size: $font-size;
 }
 
 @mixin text($font-size: 1rem) {
   font-family: $font-text, sans-serif;
   font-weight: 400;
-  color: $text-main;
+  color: $text-primary;
   font-size: $font-size;
 }
 
@@ -29,7 +29,7 @@
   $font-family: $font-text, 
   $font-weight: 400, 
   $font-size: 1rem, 
-  $color: $text-main
+  $color: $text-primary
 ) {
   font-family: $font-family, sans-serif;
   font-weight: $font-weight;
@@ -79,16 +79,16 @@
 }
 
 @mixin btn-secondary-custom {
-  background-color: $button-secondary;
+  background-color: $button-secondary-bg;
   color: $text-accent;
 
   &:visited {
-    background-color: $button-secondary;
+    background-color: $button-secondary-bg;
     color: $text-accent;
   }
 
   &:is(:hover, :focus, :active) {
-    background-color: $button-hover;
+    background-color: $button-secondary-bg-hover;
     color: $text-accent;
   }
 }

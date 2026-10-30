@@ -16,14 +16,14 @@
 
 // Primary button
 .btn.btn-dark.btn-primary-custom {
-  background-color: $button-main;
-  color: $text-light;
-  box-shadow: 0 4px 9px -4px rgba($color: $button-main, $alpha: 0.35);
+  background-color: $button-primary-bg;
+  color: $text-white;
+  box-shadow: 0 4px 9px -4px rgba($color: $button-primary-bg, $alpha: 0.35);
 
   &:hover,
   &:active {
-    box-shadow: 0 8px 9px -4px rgba($color: $button-main, $alpha: 0.15),
-    0 4px 18px 0 rgba($color: $button-main, $alpha: 0.1);
+    box-shadow: 0 8px 9px -4px rgba($color: $button-primary-bg, $alpha: 0.15),
+    0 4px 18px 0 rgba($color: $button-primary-bg, $alpha: 0.1);
   }
 }
 

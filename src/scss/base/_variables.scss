@@ -5,24 +5,27 @@
 // Brand
 $brand: #2C5F2D;
 
+// Semantic UI
+$primary: $brand;
+
 // Layout
-$background-main: #fbfbfb;
-$background-primary: #ffffff;
-$background-secondary: #f2f2f2;
-$background-accent: #DCEDC8;
-$background-brand: $brand;
+$bg-page: #fbfbfb;
+$bg-surface: #ffffff;
+$bg-footer: #f2f2f2;
+$bg-accent: #DCEDC8;
+$bg-brand: $brand;
 
 // Text
-$text-main: #332D2D;
-$text-dark: #666666;
+$text-primary: #332D2D;
+$text-secondary: #666666;
 $text-accent: $brand;
 $text-accent-light: #E8F5E9;
-$text-light: #ffffff;
+$text-white: #ffffff;
 
-// Button & Hover
-$button-main: $brand;
-$button-hover: #C8E6C9;
-$button-secondary: #E8F5E9;
+// Buttons
+$button-primary-bg: $brand;
+$button-secondary-bg: #E8F5E9;
+$button-secondary-bg-hover: #C8E6C9;
 
 // =================================
 //   TYPOGRAPHY

@@ -30,14 +30,14 @@
   &__content { text-align: center; }
 
   &__title {
-    @include custom-text($font-title, 700, 5rem, $text-light);
+    @include custom-text($font-title, 700, 5rem, $text-white);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
     margin-bottom: 1.5rem;
   }
 
   &__subtitle {
-    @include custom-text($font-text, 400, 2.5rem, $text-light);
+    @include custom-text($font-text, 400, 2.5rem, $text-white);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     margin-bottom: 1.5rem;
   }
@@ -45,7 +45,7 @@
   &__btn.btn.btn-light {
     @include mask-light(0.1);
     border: 1px solid rgba($color: #ffffff, $alpha: 0.4);
-    color: $text-light;
+    color: $text-white;
     padding: 10px 24px;
     font-size: 16px;
     border-radius: 30px;

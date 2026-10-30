@@ -7,7 +7,7 @@
 @use '../base/mixins' as *;
 
 body {
-  background-color: $background-main;
+  background-color: $bg-page;
 }
 
 :where(h1) {

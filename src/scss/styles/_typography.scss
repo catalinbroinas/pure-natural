@@ -18,16 +18,16 @@
 }
 
 .text-muted-strong {
-  @include custom-text($font-text, 400, 1rem, $text-dark);
+  @include custom-text($font-text, 400, 1rem, $text-secondary);
 }
 
 .footer-text {
-  @include custom-text($font-title, 400, 1rem, $text-main);
+  @include custom-text($font-title, 400, 1rem, $text-primary);
 }
 
 // Contact
 .contact-text {
-  @include custom-text($font-title, 400, 1rem, $text-main);
+  @include custom-text($font-title, 400, 1rem, $text-primary);
 }
 
 a.contact-text {

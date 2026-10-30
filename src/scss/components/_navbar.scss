@@ -47,7 +47,7 @@
 
   .nav-link {
     @include subtitle(1.25rem);
-    color: $text-light;
+    color: $text-white;
     padding: 1rem;
     position: relative;
   }
@@ -78,7 +78,7 @@
 
   // Mobile devices
   @media (max-width: 991.98px) {
-    background-color: $background-primary;
+    background-color: $bg-surface;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.07), 
     0 2px 4px rgba(0, 0, 0, 0.05);
 
@@ -107,7 +107,7 @@
     }
 
     .nav-link {
-      color: $text-main;
+      color: $text-primary;
     }
 
     .navbar-brand::after,
@@ -135,7 +135,7 @@
 // After scroll
 .navbar.scrolled {
   @media (min-width: 992px) {
-    background-color: $background-primary;
+    background-color: $bg-surface;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 12px 0px, 
     rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
 
@@ -144,7 +144,7 @@
     }
     
     .nav-link {
-      color: $text-main;
+      color: $text-primary;
     }
 
     .navbar-brand::after,
