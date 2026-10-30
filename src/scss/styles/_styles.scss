@@ -1,11 +1,21 @@
-// =================================
-//   STYLES
-// =================================
-
-// Imports
 @use '../base' as *;
 
-// Masks
+// =================================
+//   COLORS
+// =================================
+
+.bg-brand {
+  background-color: $bg-brand;
+}
+
+.bg-footer {
+  background-color: $bg-footer;
+}
+
+// =================================
+//   MASKS
+// =================================
+
 .mask-dark {
   @include mask-dark(0.25);
 }
@@ -21,21 +31,18 @@
   opacity: 1;
 }
 
-// Colors
-.bg-brand {
-  background-color: $bg-brand;
-}
+// =================================
+//   SPACING
+// =================================
 
-.bg-footer {
-  background-color: $bg-footer;
-}
-
-// Spacing
 .scroll-margin {
   scroll-margin-top: 100px;
 }
 
-// Utilities
+// =================================
+//   UTILITIES
+// =================================
+
 .btn-reset {
   @include btn-reset;
 }

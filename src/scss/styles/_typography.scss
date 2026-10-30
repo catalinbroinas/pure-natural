@@ -1,9 +1,8 @@
-// =================================
-//   TYPOGRAPHY
-// =================================
-
-// Imports
 @use '../base' as *;
+
+// =================================
+//   GENERAL
+// =================================
 
 .title {
   @include title;
@@ -25,7 +24,10 @@
   @include custom-text($font-title, 400, 1rem, $text-primary);
 }
 
-// Contact
+// =================================
+//   CONTACT SECTION
+// =================================
+
 .contact-text {
   @include custom-text($font-title, 400, 1rem, $text-primary);
 }
