@@ -1,11 +1,9 @@
-// =================================
-//   BUTTONS
-// =================================
-
-// Imports
 @use '../base' as *;
 
-// Products
+// =================================
+//   PRODUCT CARD
+// =================================
+
 .card-product {
   .card-image {
     object-fit: cover;
@@ -41,7 +39,10 @@
   }
 }
 
-// About
+// =================================
+//   ABOUT CARD
+// =================================
+
 .card-about {
   position: relative;
   z-index: 2;
@@ -66,7 +67,10 @@
   }
 }
 
-// Team
+// =================================
+//   TEAM CARD
+// =================================
+
 .card-team {
   background-color: $bg-surface;
   position: relative;
@@ -109,7 +113,10 @@
   }
 }
 
-// Brand
+// =================================
+//   BRAND CARD
+// =================================
+
 .card-brand {
   text-align: center;
   transition: transform 0.3s ease;
@@ -142,7 +149,10 @@
   }
 }
 
-// Contact
+// =================================
+//   GOOGLE MAPS
+// =================================
+
 .contact-maps {
   --mdb-aspect-ratio: 100%; // 1x1
   
