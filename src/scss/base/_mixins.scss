@@ -1,8 +1,3 @@
-// =================================
-//   MIXINS
-// =================================
-
-// Imports
 @use 'variables' as *;
 
 // =================================
@@ -98,13 +93,6 @@
   }
 }
 
-// Dividers
-@mixin hr-heading($color: black) {
-  border: 0.35rem $color solid;
-  width: 8vw;
-  opacity: 0.8;
-}
-
 // =================================
 //   STYLES
 // =================================
@@ -130,7 +118,17 @@
   background-color: rgba($color: #1DE9B6, $alpha: $opacity);
 }
 
-// Utilities
+// Dividers
+@mixin hr-heading($color: black) {
+  border: 0.35rem $color solid;
+  width: 8vw;
+  opacity: 0.8;
+}
+
+// =================================
+//   UTILITIES
+// =================================
+
 @mixin btn-reset {
   border: none;
   padding: 0;
@@ -147,7 +145,6 @@
 //   ANIMATIONS
 // =================================
 
-// Borders
 @mixin nav-item-border($bg-color: $text-accent, $width: 0px, $left: 0%) {
   position: absolute;
   width: $width;
