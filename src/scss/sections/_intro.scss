@@ -64,6 +64,16 @@
     background-attachment: scroll;
   }
 
+  @media (max-width: 1399.98px) {
+    &__title {
+      font-size: 4.5rem;
+    }
+
+    &__subtitle {
+      font-size: 2.25rem;
+    }
+  }
+
   @media (max-width: 1199.98px) {
     &__title {
       font-size: 4rem;
