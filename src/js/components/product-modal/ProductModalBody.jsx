@@ -37,11 +37,7 @@ function ProductModalBody({ product }) {
 function ProductVisual({ image, name }) {
     return (
         <div className="col-xl-5 col-lg-6 col-12">
-            <div
-                className="bg-image rounded-6 shadow-5-strong"
-                data-mdb-ripple-init
-                data-mdb-ripple-color="light"
-            >
+            <div className="bg-image rounded-6 shadow-5-strong">
                 <img
                     src={image}
                     className="w-100"
